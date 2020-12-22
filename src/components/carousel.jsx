@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import { Card, CardBody, Col, Container, Row, Button } from 'shards-react';
 import mcafee from '../assets/mcafee.png';
 import check from '../assets/check.png';
@@ -52,15 +52,17 @@ const Carousel = () => {
     // let levelPrice;
     let minPrice = 1;
 
-    const handleServiceSelect = (name) =>  {
-        if(name === "Writing"){
-            return minPrice * 8
-        }else if (name === "Rewriting"){
-            return minPrice * 6
-        }else {
-            return  minPrice * 5
-        }
-    };
+    // const handleServiceSelect = (name) =>  {
+    //     if(name === "Writing"){
+    //         return minPrice * 8
+    //     }else if (name === "Rewriting"){
+    //         return minPrice * 6
+    //     }else {
+    //         return  minPrice * 5
+    //     }
+    // };
+    const [selectedOption, setSelectedOption] = useState(serviceSelector[0].name);
+    console.log(selectedOption);
 
     return ( 
         <div className="background">
@@ -101,9 +103,11 @@ const Carousel = () => {
                                 <h5><center>Calculate price <img src={mcafee} alt="mcafee" width="100px"/></center></h5>
                                 <form>
                                     <div className="form-group">
-                                        <select className="form-control" id="exampleFormControlSelect1">
+                                        <select className="form-control"
+                                        value={selectedOption}
+                                        onChange={e => setSelectedOption(e.target.value)}>
                                             {serviceSelector.map(service => { return (
-                                                <option onChange={handleServiceSelect}>{service.name}</option>
+                                                <option key={service.id} value={service.name}>{service.name}</option>
                                             )})}
                                         </select>
                                         </div>

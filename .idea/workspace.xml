@@ -11,6 +11,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="topratedprofessors" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -59,7 +62,7 @@
       <workItem from="1608536859672" duration="5847000" />
       <workItem from="1608543151133" duration="23225000" />
       <workItem from="1608613777367" duration="741000" />
-      <workItem from="1608614982047" duration="4432000" />
+      <workItem from="1608614982047" duration="5396000" />
     </task>
     <servers />
   </component>
