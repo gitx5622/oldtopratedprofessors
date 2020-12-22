@@ -45,12 +45,6 @@ const Carousel = () => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-    var myservice = 8;
-    var mytype = 1;
-    var myurgency = 1;
-    var mypages = 1;
-    var mylevel = 1;
-
     const [selected, setSelected] = React.useState("");
 
     const parseSelected = (event) => {
@@ -59,17 +53,21 @@ const Carousel = () => {
     };
 
     const calculatePrice = () => {
-        const factor = serviceSelector.map(service => service.factor);
+        var myservice = 8;
+        var mytype = 1;
+        var myurgency = 1;
+        var mypages = 1;
+        var mylevel = 1;
+        
         if (selected.name === 'Writing'){
-            myservice = factor[0];
+            myservice = 8;
         }else if (selected.name === 'Rewriting'){
-            myservice = factor[1];
+            myservice = 6;
         }else if (selected.name === 'Editing'){
-            myservice = factor[2];
+            myservice = 5;
         }
         return myservice * mytype * mypages * myurgency * mylevel
     };
-
     return ( 
         <div className="background">
             <Container>
