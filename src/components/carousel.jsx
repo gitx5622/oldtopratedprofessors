@@ -61,14 +61,11 @@ const Carousel = () => {
     const calculatePrice = () => {
         const factor = serviceSelector.map(service => service.factor);
         if (selected.name === 'Writing'){
-            // eslint-disable-next-line no-unused-expressions
-            myservice === factor[0];
+            myservice = factor[0];
         }else if (selected.name === 'Rewriting'){
-            // eslint-disable-next-line no-unused-expressions
-            myservice === factor[1];
+            myservice = factor[1];
         }else if (selected.name === 'Editing'){
-            // eslint-disable-next-line no-unused-expressions
-            myservice === factor[2];
+            myservice = factor[2];
         }
         return myservice * mytype * mypages * myurgency * mylevel
     };
