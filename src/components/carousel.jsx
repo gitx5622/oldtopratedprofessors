@@ -55,8 +55,7 @@ const Carousel = () => {
 
     const parseSelected = (event) => {
         const valueToParse = event.target.value;
-        const itemSelected = JSON.parse(valueToParse);
-        setSelected(itemSelected);
+        setSelected(valueToParse);
     };
 
     const calculatePrice = () => {
@@ -116,7 +115,7 @@ const Carousel = () => {
                                         <select className="form-control"
                                         onChange={parseSelected}>
                                             {serviceSelector.map(service => { return (
-                                                <option key={service.id} value={JSON.stringify(service)}>{service.name}</option>
+                                                <option key={service.id} value={service}>{service.name}</option>
                                             )})}
                                         </select>
                                         </div>
