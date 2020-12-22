@@ -46,7 +46,7 @@ const Carousel = () => {
     }, []);
 
     let defaultPrice = 8;
-    let minPrice = 1;
+    let minPrice;
 
     const [selected, setSelected] = React.useState("");
 

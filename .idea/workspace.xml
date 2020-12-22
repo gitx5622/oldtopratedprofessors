@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9b8b21f-654d-44d1-a1a5-1425e85c0a40" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/carousel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/carousel.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="b9b8b21f-654d-44d1-a1a5-1425e85c0a40" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,7 +59,7 @@
       <workItem from="1608543151133" duration="23225000" />
       <workItem from="1608613777367" duration="741000" />
       <workItem from="1608614982047" duration="5396000" />
-      <workItem from="1608623505687" duration="2817000" />
+      <workItem from="1608623505687" duration="3068000" />
     </task>
     <servers />
   </component>
