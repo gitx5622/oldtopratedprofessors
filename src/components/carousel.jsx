@@ -59,13 +59,20 @@ const Carousel = () => {
         setSelected(itemSelected);
     };
 
-    if (selected.name === "Writing"){
-        return myservice === 8
-    }else if (selected.name === "Rewriting"){
-        return myservice === 6
-    }else if (selected.name === "Editing"){
-        return myservice === 5
-    }
+    const calculatePrice = () => {
+        const factor = serviceSelector.map(service => service.factor);
+        if (selected.name === "Writing"){
+            // eslint-disable-next-line no-unused-expressions
+            myservice === factor[0];
+        }else if (selected.name === "Rewriting"){
+            // eslint-disable-next-line no-unused-expressions
+            myservice === factor[1];
+        }else if (selected.name === "Editing"){
+            // eslint-disable-next-line no-unused-expressions
+            myservice === factor[2];
+        }
+        return myservice * mytype * mypages * myurgency * mylevel
+    };
 
     return ( 
         <div className="background">
@@ -142,7 +149,7 @@ const Carousel = () => {
                                         </select>
                                         </div>
 
-                                        <center><p>Minimum Price: {myservice*mytype*myurgency*mypages*mylevel}</p></center>
+                                        <center><p>Minimum Price: {calculatePrice()}</p></center>
                                 <center><a href="/order/index"><Button href="/order/index" block size="sm" theme="success">Continue</Button></a></center>
                                 </form>
                                 </CardBody>
