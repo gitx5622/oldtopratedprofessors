@@ -126,7 +126,8 @@ const Carousel = () => {
                                         </select>
                                         </div>
 
-                                        <center><p>Minimum Price: {servicePrice + typePrice + urgencyPrice + pagePrice + levelPrice}</p></center>
+                                        <center><p>Minimum Price: {servicePrice && typePrice && urgencyPrice && pagePrice && levelPrice  ?
+                                            servicePrice + typePrice + urgencyPrice + pagePrice + levelPrice : minPrice}</p></center>
                                 <center><a href="/order/index"><Button href="/order/index" block size="sm" theme="success">Continue</Button></a></center>
                                 </form>
                                 </CardBody>
