@@ -44,26 +44,11 @@ const Carousel = () => {
         getAllPages();
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
-
-    // let servicePrice;
-    // let typePrice;
-    // let urgencyPrice;
-    // let pagePrice;
-    // let levelPrice;
+    
     let minPrice = 1;
 
-    // const handleServiceSelect = (name) =>  {
-    //     if(name === "Writing"){
-    //         return minPrice * 8
-    //     }else if (name === "Rewriting"){
-    //         return minPrice * 6
-    //     }else {
-    //         return  minPrice * 5
-    //     }
-    // };
-    const [selectedOption, setSelectedOption] = useState(serviceSelector[0].name);
+    const [selectedOption, setSelectedOption] = useState(serviceSelector.map(service => service.name));
     console.log(selectedOption);
-
     return ( 
         <div className="background">
             <Container>

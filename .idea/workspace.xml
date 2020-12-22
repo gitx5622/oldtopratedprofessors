@@ -4,7 +4,10 @@
     <list default="true" id="b9b8b21f-654d-44d1-a1a5-1425e85c0a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/carousel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/carousel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/order/common/createForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/common/createForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/level/actions/levelActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/level/actions/levelActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/pages/actions/pageActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/pages/actions/pageActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/service/actions/serviceActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/service/actions/serviceActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/urgency/actions/urgencyActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/urgency/actions/urgencyActions.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +66,7 @@
       <workItem from="1608543151133" duration="23225000" />
       <workItem from="1608613777367" duration="741000" />
       <workItem from="1608614982047" duration="5396000" />
+      <workItem from="1608623505687" duration="300000" />
     </task>
     <servers />
   </component>

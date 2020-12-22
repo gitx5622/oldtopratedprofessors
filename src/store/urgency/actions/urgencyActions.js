@@ -6,8 +6,7 @@ import {URGENCY_ERROR, URGENCY_SUCCESS} from "../actionTypes";
 export const orderUrgency = () => {
     return async(dispatch) => {
         try {
-            const res = await axios.get(`${API_ROUTE}/urgencies`,
-                { headers: { 'x-toprated-token': `${localStorage.getItem('token')}` } });
+            const res = await axios.get(`${API_ROUTE}/urgencies`);
             dispatch({type: URGENCY_SUCCESS, payload: res.data})
         }catch (err) {
             dispatch({type: URGENCY_ERROR, payload: err.response.data.error_message})
