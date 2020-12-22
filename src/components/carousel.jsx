@@ -45,6 +45,9 @@ const Carousel = () => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
+    let defaultPrice = 8;
+    let minPrice = 1;
+
     const [selected, setSelected] = React.useState("");
 
     const parseSelected = (event) => {
@@ -52,6 +55,13 @@ const Carousel = () => {
         const itemSelected = JSON.parse(valueToParse);
         setSelected(itemSelected);
     };
+    if (selected.name === "Writing"){
+        return minPrice * 8
+    }else if (selected.name === "Rewriting"){
+        return minPrice * 6
+    }else if (selected.name === "Editing"){
+        return minPrice * 5
+    }
     return ( 
         <div className="background">
             <Container>
@@ -127,7 +137,7 @@ const Carousel = () => {
                                         </select>
                                         </div>
 
-                                        <center><p>Selected name: {selected.name}</p></center>
+                                        <center><p>Minimum Price: {selected ? minPrice : defaultPrice}</p></center>
                                 <center><a href="/order/index"><Button href="/order/index" block size="sm" theme="success">Continue</Button></a></center>
                                 </form>
                                 </CardBody>
