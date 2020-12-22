@@ -46,8 +46,8 @@ const CreateForm = () => {
     const serviceSelector = useSelector(state => state.Service.service);
     const sourcesSelector = useSelector(state => state.Sources.sources);
     // const spacingSelector = useSelector(state => state.Spacing.spacing);
-    const styleSelector = useSelector(state => state.Style.style);
-    const subjectSelector = useSelector(state => state.Subject.subject);
+    // const styleSelector = useSelector(state => state.Style.style);
+    // const subjectSelector = useSelector(state => state.Subject.subject);
     const typeSelector = useSelector(state => state.Type.type);
     const urgencySelector = useSelector(state => state.Urgency.urgency);
 
@@ -136,7 +136,7 @@ const CreateForm = () => {
                 <div className="form-group">
                 <label><strong>Styles</strong></label>
                     <select autoFocus className="form-control" id="exampleFormControlSelect1">
-                        {styleSelector.map(service => { return (
+                        {sourcesSelector.map(service => { return (
                             <option>{service.name}</option>
                         )})}
                     </select>
@@ -152,7 +152,7 @@ const CreateForm = () => {
                 <div className="form-group">
                     <label><strong>Language</strong></label>
                     <select autoFocus className="form-control" id="exampleFormControlSelect1">
-                        {subjectSelector.map(service => { return (
+                        {sourcesSelector.map(service => { return (
                             <option>{service.name}</option>
                         )})}
                     </select>
@@ -184,7 +184,7 @@ const CreateForm = () => {
                     <div className="form-group">
                         <label><strong>Subject</strong></label>
                         <select autoFocus className="form-control" id="exampleFormControlSelect1">
-                            {subjectSelector.map(service => { return (
+                            {sourcesSelector.map(service => { return (
                                 <option>{service.name}</option>
                             )})}
                         </select>

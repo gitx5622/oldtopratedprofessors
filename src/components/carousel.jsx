@@ -46,30 +46,111 @@ const Carousel = () => {
     }, []);
 
     const [selected, setSelected] = React.useState("");
+    const [minServicePrice, setMinServicePrice] = React.useState(8);
+    const [minTypePrice, setMinTypePrice] = React.useState(8);
+    const [minUrgencyPrice, setMinUrgencyPrice] = React.useState(8);
+    const [minPagePrice, setMinPagePrice] = React.useState(8);
+    const [minLevelPrice, setMinLevelPrice] = React.useState(8);
+    console.log(selected);
 
-    const parseSelected = (event) => {
+    let myservice = 8;
+    let mytype = 1;
+    let myurgency = 1;
+    let mypages = 1;
+    let mylevel = 1;
+
+    const parseServiceSelected = (event) => {
         const valueToParse = event.target.value;
         const itemSelected = JSON.parse(valueToParse);
         setSelected(itemSelected);
-    };
-
-    const calculatePrice = () => {
-        var myservice = 8;
-        var mytype = 1;
-        var myurgency = 1;
-        var mypages = 1;
-        var mylevel = 1;
-
-        if (selected.name === 'Writing'){
-            myservice = 8;
-        }else if (selected.name === 'Rewriting'){
-            myservice = 6;
-            console.log(myservice);
-        }else if (selected.name === 'Editing'){
-            myservice = 5;
+        if(itemSelected.name === 'Writing'){
+            myservice = itemSelected.factor;
+            setMinServicePrice (myservice * mylevel * mypages * myurgency * mytype)
+        }else if(itemSelected.name === 'Rewriting'){
+            myservice = itemSelected.factor;
+            setMinServicePrice (myservice * mylevel * mypages * myurgency * mytype)
+        }else if(itemSelected.name === 'Editing'){
+            myservice = itemSelected.factor;
+            setMinServicePrice (myservice * mylevel * mypages * myurgency * mytype)
         }
-        return myservice * mytype * mypages * myurgency * mylevel
     };
+    const parseTypeSelected = (event) => {
+        const valueToParse = event.target.value;
+        const itemSelected = JSON.parse(valueToParse);
+        setSelected(itemSelected);
+        if(itemSelected.name === 'Argumentative Essay'){
+            mytype = itemSelected.factor;
+            setMinTypePrice (myservice * mylevel * mypages * myurgency * mytype)
+        }else if(itemSelected.name === 'Admission/Application Essay'){
+            mytype = itemSelected.factor;
+            setMinTypePrice (myservice * mylevel * mypages * myurgency * mytype)
+        }else if(itemSelected.name === 'Annotated Bibliography'){
+            mytype = itemSelected.factor;
+            setMinTypePrice (myservice * mylevel * mypages * myurgency * mytype)
+        }else if(itemSelected.name === 'Article Review/Critique'){
+            mytype = itemSelected.factor;
+            setMinTypePrice (myservice * mylevel * mypages * myurgency * mytype)
+        }
+    };
+    const parseUrgencySelected = (event) => {
+        const valueToParse = event.target.value;
+        const itemSelected = JSON.parse(valueToParse);
+        setSelected(itemSelected);
+        if(itemSelected.name === '3 hours'){
+            myurgency = itemSelected.factor;
+            setMinUrgencyPrice (myservice * mylevel * mypages * myurgency * mytype)
+        }else if(itemSelected.name === '6 hours'){
+            myurgency = itemSelected.factor;
+            setMinUrgencyPrice (myservice * mylevel * mypages * myurgency * mytype)
+        }else if(itemSelected.name === '12 hours'){
+            myurgency = itemSelected.factor;
+            setMinUrgencyPrice (myservice * mylevel * mypages * myurgency * mytype)
+        }else if(itemSelected.name === '24 hours'){
+            myurgency = itemSelected.factor;
+            setMinUrgencyPrice (myservice * mylevel * mypages * myurgency * mytype)
+        }
+    };
+    const parsePageSelected = (event) => {
+        const valueToParse = event.target.value;
+        const itemSelected = JSON.parse(valueToParse);
+        setSelected(itemSelected);
+        if(itemSelected.name === '275 words / 1 page'){
+            mypages = itemSelected.factor;
+            setMinPagePrice (myservice * mylevel * mypages * myurgency * mytype)
+        }else if(itemSelected.name === '550 words / 2 pages'){
+            mypages = itemSelected.factor;
+            setMinPagePrice (myservice * mylevel * mypages * myurgency * mytype)
+        }else if(itemSelected.name === '825 words / 3 pages'){
+            mypages = itemSelected.factor;
+            setMinPagePrice (myservice * mylevel * mypages * myurgency * mytype)
+        }else if(itemSelected.name === '1100 words / 4 pages'){
+            mypages = itemSelected.factor;
+            setMinPagePrice (myservice * mylevel * mypages * myurgency * mytype)
+        }
+    };
+    const parseLevelSelected = (event) => {
+        const valueToParse = event.target.value;
+        const itemSelected = JSON.parse(valueToParse);
+        setSelected(itemSelected);
+        if(itemSelected.name === 'High School'){
+            mylevel = itemSelected.factor;
+            setMinLevelPrice (myservice * mylevel * mypages * myurgency * mytype)
+        }else if(itemSelected.name === 'College/Undergraduate'){
+            mylevel = itemSelected.factor;
+            setMinLevelPrice (myservice * mylevel * mypages * myurgency * mytype)
+        }else if(itemSelected.name === 'Master'){
+            mylevel = itemSelected.factor;
+            setMinLevelPrice (myservice * mylevel * mypages * myurgency * mytype)
+        }else if(itemSelected.name === 'Doctorate'){
+            mylevel = itemSelected.factor;
+            setMinLevelPrice (myservice * mylevel * mypages * myurgency * mytype)
+        }
+    };
+    console.log(minServicePrice);
+    // console.log(minTypePrice);
+    // console.log(minUrgencyPrice);
+    // console.log(minPagePrice);
+    // console.log(minLevelPrice);
     return ( 
         <div className="background">
             <Container>
@@ -110,42 +191,46 @@ const Carousel = () => {
                                 <form>
                                     <div className="form-group">
                                         <select className="form-control"
-                                        onChange={parseSelected}>
+                                        onChange={parseServiceSelected}>
                                             {serviceSelector.map(service => { return (
                                                 <option key={service.id} value={JSON.stringify(service)}>{service.name}</option>
                                             )})}
                                         </select>
                                         </div>
                                     <div className="form-group">
-                                        <select className="form-control" id="exampleFormControlSelect1">
-                                            {typeSelector.map(service => { return (
-                                                <option>{service.name}</option>
+                                        <select className="form-control"
+                                        onChange={parseTypeSelected}>
+                                            {typeSelector.map(type => { return (
+                                                <option key={type.id} value={JSON.stringify(type)}>{type.name}</option>
                                             )})}
                                         </select>
                                         </div>
                                     <div className="form-group">
-                                        <select className="form-control" id="exampleFormControlSelect1">
-                                            {urgencySelector.map(service => { return (
-                                                <option>{service.name}</option>
+                                        <select className="form-control"
+                                        onChange={parseUrgencySelected}>
+                                            {urgencySelector.map(urgency => { return (
+                                                <option key={urgency.id} value={JSON.stringify(urgency)}>{urgency.name}</option>
                                             )})}
                                         </select>
                                         </div>
                                     <div className="form-group">
-                                        <select className="form-control" id="exampleFormControlSelect1">
-                                            {pageSelector.map(service => { return (
-                                                <option>{service.name}</option>
+                                        <select className="form-control"
+                                                onChange={parsePageSelected}>
+                                            {pageSelector.map(page => { return (
+                                                <option key={page.id} value={JSON.stringify(page)}>{page.name}</option>
                                             )})}
                                         </select>
                                         </div>
                                     <div className="form-group">
-                                        <select className="form-control" id="exampleFormControlSelect1">
-                                            {levelSelector.map(service => { return (
-                                                <option>{service.name}</option>
+                                        <select className="form-control"
+                                                onChange={parseLevelSelected}>
+                                            {levelSelector.map(level => { return (
+                                                <option key={level.id} value={JSON.stringify(level)}>{level.name}</option>
                                             )})}
                                         </select>
                                         </div>
 
-                                        <center><p>Minimum Price: {calculatePrice()}</p></center>
+                                        <center><p className="minimunPrice">Minimum Price : {(minServicePrice + minTypePrice + minUrgencyPrice + minPagePrice + minLevelPrice).toFixed(2)}</p></center>
                                 <center><a href="/order/index"><Button href="/order/index" block size="sm" theme="success">Continue</Button></a></center>
                                 </form>
                                 </CardBody>
