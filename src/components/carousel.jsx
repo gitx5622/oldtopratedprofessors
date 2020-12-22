@@ -45,6 +45,11 @@ const Carousel = () => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
+    // let servicePrice;
+    // let typePrice;
+    // let urgencyPrice;
+    // let pagePrice;
+    // let levelPrice;
     let minPrice = 1;
 
     const handleServiceSelect = (name) =>  {
@@ -96,9 +101,9 @@ const Carousel = () => {
                                 <h5><center>Calculate price <img src={mcafee} alt="mcafee" width="100px"/></center></h5>
                                 <form>
                                     <div className="form-group">
-                                        <select onChange={handleServiceSelect} className="form-control" id="exampleFormControlSelect1">
+                                        <select className="form-control" id="exampleFormControlSelect1">
                                             {serviceSelector.map(service => { return (
-                                                <option>{service.name}</option>
+                                                <option onChange={handleServiceSelect}>{service.name}</option>
                                             )})}
                                         </select>
                                         </div>

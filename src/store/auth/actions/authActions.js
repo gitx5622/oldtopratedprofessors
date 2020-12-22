@@ -5,13 +5,13 @@ import { BEFORE_STATE, SIGNUP_SUCCESS, SIGNUP_ERROR, LOGIN_SUCCESS, LOGIN_ERROR,
 import {Alert, message} from "antd";
 import jwtdecode from 'jwt-decode';
 
-export const checkAuthTimeout = expirationTime => {
-    return dispatch => {
-        setTimeout(() => {
-            dispatch(SignOut());
-        }, expirationTime * 1000);
-    };
-};
+// export const checkAuthTimeout = expirationTime => {
+//     return dispatch => {
+//         setTimeout(() => {
+//             dispatch(SignOut());
+//         }, expirationTime * 1000);
+//     };
+// };
 
 export const SignIn = (credentials) => {
     return async dispatch => {
@@ -63,9 +63,9 @@ export const SignUp = (newUser) => {
     return async (dispatch) => {
         dispatch({ type: BEFORE_STATE });
         try {
-            const res = await axios.post(`${API_ROUTE}/register`, newUser)
+            const res = await axios.post(`${API_ROUTE}/register`, newUser);
             let userData = res.data;
-            const userToken = res.headers['x-toprated-token']
+            const userToken = res.headers['x-toprated-token'];
             const tokenInfo = jwtdecode(userToken);
             if (userToken && tokenInfo.user_id === userData.id){
             localStorage.setItem('session_id', tokenInfo.session_id);
