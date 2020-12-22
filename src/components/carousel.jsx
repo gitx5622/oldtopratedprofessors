@@ -45,8 +45,6 @@ const Carousel = () => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-    let minPrice = 1;
-
     const [selected, setSelected] = React.useState("");
 
     const parseSelected = (event) => {
@@ -98,7 +96,6 @@ const Carousel = () => {
                                             {serviceSelector.map(service => { return (
                                                 <option key={service.id} value={JSON.stringify(service)}>{service.name}</option>
                                             )})}
-                                            <p>Selected name: {selected.name}</p>
                                         </select>
                                         </div>
                                     <div className="form-group">
@@ -130,7 +127,7 @@ const Carousel = () => {
                                         </select>
                                         </div>
 
-                                        <center><p>Minimum Price: {minPrice}</p></center>
+                                        <center><p>Selected name: {selected.name}</p></center>
                                 <center><a href="/order/index"><Button href="/order/index" block size="sm" theme="success">Continue</Button></a></center>
                                 </form>
                                 </CardBody>
