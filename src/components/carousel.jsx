@@ -49,7 +49,8 @@ const Carousel = () => {
 
     const parseSelected = (event) => {
         const valueToParse = event.target.value;
-        setSelected(valueToParse);
+        const itemSelected = JSON.parse(valueToParse);
+        setSelected(itemSelected);
     };
 
     const calculatePrice = () => {
@@ -58,11 +59,12 @@ const Carousel = () => {
         var myurgency = 1;
         var mypages = 1;
         var mylevel = 1;
-        
+
         if (selected.name === 'Writing'){
             myservice = 8;
         }else if (selected.name === 'Rewriting'){
             myservice = 6;
+            console.log(myservice);
         }else if (selected.name === 'Editing'){
             myservice = 5;
         }
@@ -110,7 +112,7 @@ const Carousel = () => {
                                         <select className="form-control"
                                         onChange={parseSelected}>
                                             {serviceSelector.map(service => { return (
-                                                <option key={service.id} value={service}>{service.name}</option>
+                                                <option key={service.id} value={JSON.stringify(service)}>{service.name}</option>
                                             )})}
                                         </select>
                                         </div>
