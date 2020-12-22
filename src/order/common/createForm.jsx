@@ -14,6 +14,7 @@ import {orderSubject} from "../../store/subject/actions/subjectActions";
 import {orderTye} from "../../store/type/actions/typeActions";
 import {orderUrgency} from "../../store/urgency/actions/urgencyActions";
 import {orderService} from "../../store/service/actions/serviceActions";
+import {orderLanguage} from "../../store/language/actions/languageActions";
 
 const initialState = {
     page: 1,
@@ -50,6 +51,7 @@ const CreateForm = () => {
     // const subjectSelector = useSelector(state => state.Subject.subject);
     const typeSelector = useSelector(state => state.Type.type);
     const urgencySelector = useSelector(state => state.Urgency.urgency);
+    const languageSelector = useSelector(state => state.Language.language);
 
     const dispatch = useDispatch();
 
@@ -62,37 +64,18 @@ const CreateForm = () => {
     const getAllTypes = () => dispatch(orderTye());
     const getAllUrgencies = () => dispatch(orderUrgency());
     const getAllServices = () => dispatch(orderService());
+    const getAllLanguages = () => dispatch(orderLanguage());
 
     useEffect(() => {
         getAllLevels();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
-    useEffect(() => {
         getAllLevels();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
-    useEffect(() => {
         getAllSources();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
-    useEffect(() => {
         getAllStyles();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
-    useEffect(() => {
         getAllSubjects();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
-    useEffect(() => {
         getAllTypes();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
-    useEffect(() => {
         getAllUrgencies();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
-    useEffect(() => {
         getAllServices();
+        getAllLanguages();
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
@@ -152,7 +135,7 @@ const CreateForm = () => {
                 <div className="form-group">
                     <label><strong>Language</strong></label>
                     <select autoFocus className="form-control" id="exampleFormControlSelect1">
-                        {sourcesSelector.map(service => { return (
+                        {languageSelector.map(service => { return (
                             <option>{service.name}</option>
                         )})}
                     </select>

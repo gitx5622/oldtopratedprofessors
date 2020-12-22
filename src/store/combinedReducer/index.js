@@ -11,6 +11,7 @@ import styleReducer from "../style/reducers/styleReducer";
 import subjectReducer from "../subject/reducers/subjectReducer";
 import typeReducer from "../type/reducers/typeReducer";
 import urgencyReducer from "../urgency/reducers/urgencyReducer";
+import languageReducer from "../language/reducers/languageReducer";
 
 const reducer = combineReducers({
     Level: levelReducer,
@@ -22,6 +23,7 @@ const reducer = combineReducers({
     Subject: subjectReducer,
     Type: typeReducer,
     Urgency : urgencyReducer,
+    Language: languageReducer,
     Auth: authReducer,
     Order: orderReducer,
     Wallet: walletReducer,
