@@ -47,10 +47,10 @@ const Carousel = () => {
 
     const [selected, setSelected] = React.useState("");
     const [minServicePrice, setMinServicePrice] = React.useState(8);
-    const [minTypePrice, setMinTypePrice] = React.useState(8);
-    const [minUrgencyPrice, setMinUrgencyPrice] = React.useState(8);
-    const [minPagePrice, setMinPagePrice] = React.useState(8);
-    const [minLevelPrice, setMinLevelPrice] = React.useState(8);
+    const [minTypePrice, setMinTypePrice] = React.useState(0);
+    const [minUrgencyPrice, setMinUrgencyPrice] = React.useState(0);
+    const [minPagePrice, setMinPagePrice] = React.useState(0);
+    const [minLevelPrice, setMinLevelPrice] = React.useState(0);
     console.log(selected);
 
     let myservice = 8;
@@ -85,6 +85,27 @@ const Carousel = () => {
             mytype = itemSelected.factor;
             setMinTypePrice (myservice * mylevel * mypages * myurgency * mytype)
         }else if(itemSelected.name === 'Annotated Bibliography'){
+            mytype = itemSelected.factor;
+            setMinTypePrice (myservice * mylevel * mypages * myurgency * mytype)
+        }else if(itemSelected.name === 'Article Review/Critique'){
+            mytype = itemSelected.factor;
+            setMinTypePrice (myservice * mylevel * mypages * myurgency * mytype)
+        }else if(itemSelected.name === 'Assignment'){
+            mytype = itemSelected.factor;
+            setMinTypePrice (myservice * mylevel * mypages * myurgency * mytype)
+        }else if(itemSelected.name === 'Book Report/Review'){
+            mytype = itemSelected.factor;
+            setMinTypePrice (myservice * mylevel * mypages * myurgency * mytype)
+        }else if(itemSelected.name === 'Article Review/Critique'){
+            mytype = itemSelected.factor;
+            setMinTypePrice (myservice * mylevel * mypages * myurgency * mytype)
+        }else if(itemSelected.name === 'Article Review/Critique'){
+            mytype = itemSelected.factor;
+            setMinTypePrice (myservice * mylevel * mypages * myurgency * mytype)
+        }else if(itemSelected.name === 'Article Review/Critique'){
+            mytype = itemSelected.factor;
+            setMinTypePrice (myservice * mylevel * mypages * myurgency * mytype)
+        }else if(itemSelected.name === 'Article Review/Critique'){
             mytype = itemSelected.factor;
             setMinTypePrice (myservice * mylevel * mypages * myurgency * mytype)
         }else if(itemSelected.name === 'Article Review/Critique'){
@@ -147,10 +168,10 @@ const Carousel = () => {
         }
     };
     console.log(minServicePrice);
-    // console.log(minTypePrice);
-    // console.log(minUrgencyPrice);
-    // console.log(minPagePrice);
-    // console.log(minLevelPrice);
+    console.log(minTypePrice);
+    console.log(minUrgencyPrice);
+    console.log(minPagePrice);
+    console.log(minLevelPrice);
     return ( 
         <div className="background">
             <Container>
