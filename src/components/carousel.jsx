@@ -55,11 +55,11 @@ const Carousel = () => {
         const itemSelected = JSON.parse(valueToParse);
         setSelected(itemSelected);
         if (itemSelected === "Writing"){
-            return minPrice * 8
+            return minPrice === 8
         }else if (itemSelected === "Rewriting"){
-            return minPrice * 6
+            return minPrice === 6
         }else {
-            return minPrice * 5
+            return minPrice === 5
         }
     };
     return ( 
