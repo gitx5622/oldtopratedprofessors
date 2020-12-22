@@ -1,0 +1,2 @@
+export const STYLE_SUCCESS = "STYLE_SUCCESS";
+export const STYLE_ERROR = "STYLE_ERROR";

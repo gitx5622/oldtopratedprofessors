@@ -1,0 +1,2 @@
+export const SOURCE_SUCCESS = "SOURCE_SUCCESS";
+export const SOURCE_ERROR = "SOURCE_ERROR";

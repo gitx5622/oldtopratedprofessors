@@ -1,0 +1,2 @@
+export const URGENCY_SUCCESS = "URGENCY_SUCCESS";
+export const URGENCY_ERROR = "URGENCY_ERROR";

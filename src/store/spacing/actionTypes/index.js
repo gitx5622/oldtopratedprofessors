@@ -1,0 +1,2 @@
+export const SPACING_SUCCESS = "SPACING_SUCCESS";
+export const SPACING_ERROR = "SPACING_ERROR";
