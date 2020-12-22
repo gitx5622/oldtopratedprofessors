@@ -45,12 +45,17 @@ const Carousel = () => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-    let servicePrice;
-    let typePrice;
-    let urgencyPrice;
-    let pagePrice;
-    let levelPrice;
-    let minPrice = 8;
+    let minPrice = 1;
+
+    const handleServiceSelect = (name) =>  {
+        if(name === "Writing"){
+            return minPrice * 8
+        }else if (name === "Rewriting"){
+            return minPrice * 6
+        }else {
+            return  minPrice * 5
+        }
+    };
 
     return ( 
         <div className="background">
@@ -91,43 +96,42 @@ const Carousel = () => {
                                 <h5><center>Calculate price <img src={mcafee} alt="mcafee" width="100px"/></center></h5>
                                 <form>
                                     <div className="form-group">
-                                        <select className="form-control" id="exampleFormControlSelect1">
+                                        <select onChange={handleServiceSelect} className="form-control" id="exampleFormControlSelect1">
                                             {serviceSelector.map(service => { return (
-                                                <option onChange={servicePrice === service.factor * minPrice}>{service.name}</option>
+                                                <option>{service.name}</option>
                                             )})}
                                         </select>
                                         </div>
                                     <div className="form-group">
                                         <select className="form-control" id="exampleFormControlSelect1">
                                             {typeSelector.map(service => { return (
-                                                <option onChange={typePrice === service.factor * minPrice}>{service.name}</option>
+                                                <option>{service.name}</option>
                                             )})}
                                         </select>
                                         </div>
                                     <div className="form-group">
                                         <select className="form-control" id="exampleFormControlSelect1">
                                             {urgencySelector.map(service => { return (
-                                                <option onChange={urgencyPrice === service.factor * minPrice}>{service.name}</option>
+                                                <option>{service.name}</option>
                                             )})}
                                         </select>
                                         </div>
                                     <div className="form-group">
                                         <select className="form-control" id="exampleFormControlSelect1">
                                             {pageSelector.map(service => { return (
-                                                <option onChange={pagePrice === service.factor * minPrice}>{service.name}</option>
+                                                <option>{service.name}</option>
                                             )})}
                                         </select>
                                         </div>
                                     <div className="form-group">
                                         <select className="form-control" id="exampleFormControlSelect1">
                                             {levelSelector.map(service => { return (
-                                                <option onChange={levelPrice === service.factor * minPrice}>{service.name}</option>
+                                                <option>{service.name}</option>
                                             )})}
                                         </select>
                                         </div>
 
-                                        <center><p>Minimum Price: {servicePrice && typePrice && urgencyPrice && pagePrice && levelPrice  ?
-                                            servicePrice + typePrice + urgencyPrice + pagePrice + levelPrice : minPrice}</p></center>
+                                        <center><p>Minimum Price: {minPrice}</p></center>
                                 <center><a href="/order/index"><Button href="/order/index" block size="sm" theme="success">Continue</Button></a></center>
                                 </form>
                                 </CardBody>

@@ -13,9 +13,6 @@ import typeReducer from "../type/reducers/typeReducer";
 import urgencyReducer from "../urgency/reducers/urgencyReducer";
 
 const reducer = combineReducers({
-    Auth: authReducer,
-    Order: orderReducer,
-    Wallet: walletReducer,
     Level: levelReducer,
     Spacing: spacingReducer,
     Page: pageReducer,
@@ -25,6 +22,9 @@ const reducer = combineReducers({
     Subject: subjectReducer,
     Type: typeReducer,
     Urgency : urgencyReducer,
+    Auth: authReducer,
+    Order: orderReducer,
+    Wallet: walletReducer,
 });
 
 export default reducer
