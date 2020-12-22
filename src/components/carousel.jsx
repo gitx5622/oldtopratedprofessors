@@ -54,9 +54,11 @@ const Carousel = () => {
         const valueToParse = event.target.value;
         const itemSelected = JSON.parse(valueToParse);
         setSelected(itemSelected);
-        if (itemSelected === "Writing"){
+    };
+    const calculatePrice = () => {
+        if (selected.name === "Writing"){
             return minPrice === 8
-        }else if (itemSelected === "Rewriting"){
+        }else if (selected.name === "Rewriting"){
             return minPrice === 6
         }else {
             return minPrice === 5
@@ -137,7 +139,7 @@ const Carousel = () => {
                                         </select>
                                         </div>
 
-                                        <center><p>Minimum Price: {selected ? minPrice : defaultPrice}</p></center>
+                                        <center><p>Minimum Price: {selected ? calculatePrice() : defaultPrice}</p></center>
                                 <center><a href="/order/index"><Button href="/order/index" block size="sm" theme="success">Continue</Button></a></center>
                                 </form>
                                 </CardBody>
