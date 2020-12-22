@@ -93,35 +93,35 @@ const Carousel = () => {
                                     <div className="form-group">
                                         <select className="form-control" id="exampleFormControlSelect1">
                                             {serviceSelector.map(service => { return (
-                                                <option>{service.name}{servicePrice === service.factor * minPrice}</option>
+                                                <option onChange={servicePrice === service.factor * minPrice}>{service.name}</option>
                                             )})}
                                         </select>
                                         </div>
                                     <div className="form-group">
                                         <select className="form-control" id="exampleFormControlSelect1">
                                             {typeSelector.map(service => { return (
-                                                <option>{service.name}{typePrice === service.factor * minPrice}</option>
+                                                <option onChange={typePrice === service.factor * minPrice}>{service.name}</option>
                                             )})}
                                         </select>
                                         </div>
                                     <div className="form-group">
                                         <select className="form-control" id="exampleFormControlSelect1">
                                             {urgencySelector.map(service => { return (
-                                                <option>{service.name}{urgencyPrice === service.factor * minPrice}</option>
+                                                <option onChange={urgencyPrice === service.factor * minPrice}>{service.name}</option>
                                             )})}
                                         </select>
                                         </div>
                                     <div className="form-group">
                                         <select className="form-control" id="exampleFormControlSelect1">
                                             {pageSelector.map(service => { return (
-                                                <option>{service.name}{pagePrice === service.factor * minPrice}</option>
+                                                <option onChange={pagePrice === service.factor * minPrice}>{service.name}</option>
                                             )})}
                                         </select>
                                         </div>
                                     <div className="form-group">
                                         <select className="form-control" id="exampleFormControlSelect1">
                                             {levelSelector.map(service => { return (
-                                                <option>{service.name}{levelPrice === service.factor * minPrice}</option>
+                                                <option onChange={levelPrice === service.factor * minPrice}>{service.name}</option>
                                             )})}
                                         </select>
                                         </div>
