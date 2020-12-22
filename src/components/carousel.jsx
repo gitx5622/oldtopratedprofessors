@@ -45,6 +45,13 @@ const Carousel = () => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
+    let servicePrice;
+    let typePrice;
+    let urgencyPrice;
+    let pagePrice;
+    let levelPrice;
+    let minPrice = 8;
+
     return ( 
         <div className="background">
             <Container>
@@ -86,40 +93,40 @@ const Carousel = () => {
                                     <div className="form-group">
                                         <select className="form-control" id="exampleFormControlSelect1">
                                             {serviceSelector.map(service => { return (
-                                                <option>{service.name}</option>
+                                                <option>{service.name}{servicePrice === service.factor * minPrice}</option>
                                             )})}
                                         </select>
                                         </div>
                                     <div className="form-group">
                                         <select className="form-control" id="exampleFormControlSelect1">
                                             {typeSelector.map(service => { return (
-                                                <option>{service.name}</option>
+                                                <option>{service.name}{typePrice === service.factor * minPrice}</option>
                                             )})}
                                         </select>
                                         </div>
                                     <div className="form-group">
                                         <select className="form-control" id="exampleFormControlSelect1">
                                             {urgencySelector.map(service => { return (
-                                                <option>{service.name}</option>
+                                                <option>{service.name}{urgencyPrice === service.factor * minPrice}</option>
                                             )})}
                                         </select>
                                         </div>
                                     <div className="form-group">
                                         <select className="form-control" id="exampleFormControlSelect1">
                                             {pageSelector.map(service => { return (
-                                                <option>{service.name}</option>
+                                                <option>{service.name}{pagePrice === service.factor * minPrice}</option>
                                             )})}
                                         </select>
                                         </div>
                                     <div className="form-group">
                                         <select className="form-control" id="exampleFormControlSelect1">
                                             {levelSelector.map(service => { return (
-                                                <option>{service.name}</option>
+                                                <option>{service.name}{levelPrice === service.factor * minPrice}</option>
                                             )})}
                                         </select>
                                         </div>
 
-                                        <center><p>Minimum Price: 10</p></center>
+                                        <center><p>Minimum Price: {servicePrice + typePrice + urgencyPrice + pagePrice + levelPrice}</p></center>
                                 <center><a href="/order/index"><Button href="/order/index" block size="sm" theme="success">Continue</Button></a></center>
                                 </form>
                                 </CardBody>
