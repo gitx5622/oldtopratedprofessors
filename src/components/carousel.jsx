@@ -54,14 +54,14 @@ const Carousel = () => {
         const valueToParse = event.target.value;
         const itemSelected = JSON.parse(valueToParse);
         setSelected(itemSelected);
+        if (itemSelected === "Writing"){
+            return minPrice * 8
+        }else if (itemSelected === "Rewriting"){
+            return minPrice * 6
+        }else {
+            return minPrice * 5
+        }
     };
-    if (selected.name === "Writing"){
-        return minPrice * 8
-    }else if (selected.name === "Rewriting"){
-        return minPrice * 6
-    }else if (selected.name === "Editing"){
-        return minPrice * 5
-    }
     return ( 
         <div className="background">
             <Container>
