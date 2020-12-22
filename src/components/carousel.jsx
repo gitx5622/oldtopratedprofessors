@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import { Card, CardBody, Col, Container, Row, Button } from 'shards-react';
 import mcafee from '../assets/mcafee.png';
 import check from '../assets/check.png';
@@ -44,11 +44,16 @@ const Carousel = () => {
         getAllPages();
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
-    
+
     let minPrice = 1;
 
-    const [selectedOption, setSelectedOption] = useState(serviceSelector.map(service => service.name));
-    console.log(selectedOption);
+    const [selected, setSelected] = React.useState("");
+
+    const parseSelected = (event) => {
+        const valueToParse = event.target.value;
+        const itemSelected = JSON.parse(valueToParse);
+        setSelected(itemSelected);
+    };
     return ( 
         <div className="background">
             <Container>
@@ -89,11 +94,11 @@ const Carousel = () => {
                                 <form>
                                     <div className="form-group">
                                         <select className="form-control"
-                                        value={selectedOption}
-                                        onChange={e => setSelectedOption(e.target.value)}>
+                                        onChange={parseSelected}>
                                             {serviceSelector.map(service => { return (
-                                                <option key={service.id} value={service.name}>{service.name}</option>
+                                                <option key={service.id} value={JSON.stringify(service)}>{service.name}</option>
                                             )})}
+                                            <p>Selected name: {selected.name}</p>
                                         </select>
                                         </div>
                                     <div className="form-group">
