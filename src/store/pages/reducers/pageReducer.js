@@ -14,7 +14,7 @@ const pageReducer = (state = initState, action) => {
         case PAGE_SUCCESS:
             return {
                 ...state,
-                page: action.payload,
+                page: [{ name: "Select Pages (e.g 275 words / 1 page)" }, ...action.payload],
                 isLoading: false,
                 pageError: null
 

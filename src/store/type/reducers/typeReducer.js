@@ -14,7 +14,7 @@ const typeReducer = (state = initState, action) => {
         case TYPE_SUCCESS:
             return {
                 ...state,
-                type: action.payload,
+                type: [{ name: "Select Type of Paper (e.g Essay)" }, ...action.payload],
                 isLoading: false,
                 typeError: null
 

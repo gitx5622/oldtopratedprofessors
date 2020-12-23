@@ -14,7 +14,7 @@ const serviceReducer = (state = initState, action) => {
         case SERVICE_SUCCESS:
             return {
                 ...state,
-                service: action.payload,
+                service: [{ name: "Select Service (e.g Writing)" }, ...action.payload],
                 isLoading: false,
                 serviceError: null
 

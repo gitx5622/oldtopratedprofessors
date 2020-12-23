@@ -14,7 +14,7 @@ const urgencyReducer = (state = initState, action) => {
         case URGENCY_SUCCESS:
             return {
                 ...state,
-                urgency: action.payload,
+                urgency: [{ name: "Select Urgency (e.g 10 days)" }, ...action.payload],
                 isLoading: false,
                 urgencyError: null
 

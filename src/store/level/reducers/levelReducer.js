@@ -14,7 +14,7 @@ const levelReducer = (state = initState, action) => {
         case LEVEL_SUCCESS:
             return {
                 ...state,
-                level: action.payload,
+                level: [{ name: "Select Level (e.g High School)" }, ...action.payload],
                 isLoading: false,
                 levelError: null
 
