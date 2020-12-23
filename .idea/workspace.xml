@@ -4,12 +4,7 @@
     <list default="true" id="b9b8b21f-654d-44d1-a1a5-1425e85c0a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/reviews.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/reviews.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/order/common/naV.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/common/naV.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/order/createOrder.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/createOrder.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/order/sideBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/sideBar.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +66,7 @@
       <workItem from="1608614982047" duration="5396000" />
       <workItem from="1608623505687" duration="13649000" />
       <workItem from="1608639222460" duration="42434000" />
-      <workItem from="1608741207702" duration="4128000" />
+      <workItem from="1608741207702" duration="5725000" />
     </task>
     <servers />
   </component>

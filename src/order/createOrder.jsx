@@ -111,7 +111,7 @@ const CreateOrder = () => {
                     </div>
                 </div>
             </Col>
-            </Row><br/>
+            </Row>
             <Row>
                 <Col sm={12}>
                 <ul className="nav nav-tabs" id="myTab" role="tablist">
