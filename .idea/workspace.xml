@@ -5,9 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/carousel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/carousel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/order/common/createForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/common/createForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/combinedReducer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/combinedReducer/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/sources/actions/sourceActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/sources/actions/sourceActions.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +65,7 @@
       <workItem from="1608613777367" duration="741000" />
       <workItem from="1608614982047" duration="5396000" />
       <workItem from="1608623505687" duration="13649000" />
-      <workItem from="1608639222460" duration="24815000" />
+      <workItem from="1608639222460" duration="26340000" />
     </task>
     <servers />
   </component>

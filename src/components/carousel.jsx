@@ -26,21 +26,9 @@ const Carousel = () => {
 
     useEffect(() => {
         getAllLevels();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
-    useEffect(() => {
         getAllTypes();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
-    useEffect(() => {
         getAllUrgencies();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
-    useEffect(() => {
         getAllServices();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
-    useEffect(() => {
         getAllPages();
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
@@ -130,7 +118,7 @@ const Carousel = () => {
                                 <form>
                                     <div className="form-group">
                                         <select className="form-control"
-                                                placeholder="Service"
+                                                defaultValue=""
                                                 onChange={parseServiceSelected}>
                                             {serviceSelector.map(service => {
                                                 return (
@@ -184,9 +172,9 @@ const Carousel = () => {
                                         </select>
                                     </div>
 
-                                    <center><p className="minimunPrice">Minimum Price
-                                        : $ {(myservice * mytype * myurgency * mypages * mylevel).toFixed(2)}</p></center>
-                                    <center><a href="/order/index"><Button href="/order/index" block size="sm"
+                                    <center><p className="minimunPrice"><strong>Minimum Price
+                                        : $ {(myservice * mytype * myurgency * mypages * mylevel).toFixed(2)}</strong></p></center>
+                                    <center><a href="/order/index"><Button href="/order/createorder" block size="sm"
                                                                            theme="success">Continue</Button></a>
                                     </center>
                                 </form>
