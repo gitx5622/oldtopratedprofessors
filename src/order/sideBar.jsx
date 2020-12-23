@@ -19,24 +19,207 @@ import { Link } from 'react-router-dom';
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 const SideBar = ({background, theme}) => {
+    const [activeD, setActiveD] = React.useState(false);
+    const [activeP, setActiveP] = React.useState(false);
+    const [activePending, setActivePending] = React.useState(false);
+    const [activeWaiting, setActiveWaiting] = React.useState(false);
+    const [activeInprogress, setActiveInprogress] = React.useState(false);
+    const [activeCompleted, setActiveCompleted] = React.useState(false);
+    const [activeApproved, setActiveApproved] = React.useState(false);
+    const [activeRevision, setActiveRevision] = React.useState(false);
+    const [activeRejected, setActiveRejected] = React.useState(false);
+    const [activeCancelled, setActiveCancelled] = React.useState(false);
+    const [activeProfile, setActiveProfile] = React.useState(false);
+    const [activeAccount, setActiveAccount] = React.useState(false);
+    const [backgroundColor, setBackgroundColor] = React.useState("ffffff");
+
+    const handleDashboardOnClick = () => {
+        setActiveD(!activeD);
+        setActiveP(false);
+        setActivePending(false);
+        setActiveWaiting(false);
+        setActiveInprogress(false);
+        setActiveCompleted(false);
+        setActiveApproved(false);
+        setActiveRevision(false);
+        setActiveRejected(false);
+        setActiveCancelled(false);
+        setActiveProfile(false);
+        setActiveAccount(false);
+        setBackgroundColor("#beefd7")
+    };
+    const handlePlaceOrderOnClick = () => {
+        setActiveD(false);
+        setActiveP(!activeP);
+        setActivePending(false);
+        setActiveWaiting(false);
+        setActiveInprogress(false);
+        setActiveCompleted(false);
+        setActiveApproved(false);
+        setActiveRevision(false);
+        setActiveRejected(false);
+        setActiveCancelled(false);
+        setActiveProfile(false);
+        setActiveAccount(false);
+    };
+    const handlePendingOnClick = () => {
+        setActiveD(false);
+        setActiveP(false);
+        setActivePending(!activePending);
+        setActiveWaiting(false);
+        setActiveInprogress(false);
+        setActiveCompleted(false);
+        setActiveApproved(false);
+        setActiveRevision(false);
+        setActiveRejected(false);
+        setActiveCancelled(false);
+        setActiveProfile(false);
+        setActiveAccount(false);
+    };
+    const handleWaitingOnClick = () => {
+        setActiveD(false);
+        setActiveP(false);
+        setActivePending(false);
+        setActiveWaiting(!activeWaiting);
+        setActiveInprogress(false);
+        setActiveCompleted(false);
+        setActiveApproved(false);
+        setActiveRevision(false);
+        setActiveRejected(false);
+        setActiveCancelled(false);
+        setActiveProfile(false);
+        setActiveAccount(false);
+    };
+    const handleInProgressOnClick = () => {
+        setActiveD(false);
+        setActiveP(false);
+        setActivePending(false);
+        setActiveWaiting(false);
+        setActiveInprogress(!activeInprogress);
+        setActiveCompleted(false);
+        setActiveApproved(false);
+        setActiveRevision(false);
+        setActiveRejected(false);
+        setActiveCancelled(false);
+        setActiveProfile(false);
+        setActiveAccount(false);
+    };
+    const handleCompletedOnClick = () => {
+        setActiveD(false);
+        setActiveP(false);
+        setActivePending(false);
+        setActiveWaiting(false);
+        setActiveInprogress(false);
+        setActiveCompleted(!activeCompleted);
+        setActiveApproved(false);
+        setActiveRevision(false);
+        setActiveRejected(false);
+        setActiveCancelled(false);
+        setActiveProfile(false);
+        setActiveAccount(false);
+    };
+    const handleApprovedOnClick = () => {
+        setActiveD(false);
+        setActiveP(false);
+        setActivePending(false);
+        setActiveWaiting(false);
+        setActiveInprogress(false);
+        setActiveCompleted(false);
+        setActiveApproved(!activeApproved);
+        setActiveRevision(false);
+        setActiveRejected(false);
+        setActiveCancelled(false);
+        setActiveProfile(false);
+        setActiveAccount(false);
+    };
+    const handleRevisionOnClick = () => {
+        setActiveD(false);
+        setActiveP(false);
+        setActivePending(false);
+        setActiveWaiting(false);
+        setActiveInprogress(false);
+        setActiveCompleted(false);
+        setActiveApproved(false);
+        setActiveRevision(!activeRevision);
+        setActiveRejected(false);
+        setActiveCancelled(false);
+        setActiveProfile(false);
+        setActiveAccount(false);
+    };
+    const handleRejectedOnClick = () => {
+        setActiveD(false);
+        setActiveP(false);
+        setActivePending(false);
+        setActiveWaiting(false);
+        setActiveInprogress(false);
+        setActiveCompleted(false);
+        setActiveApproved(false);
+        setActiveRevision(false);
+        setActiveRejected(!activeRejected);
+        setActiveCancelled(false);
+        setActiveProfile(false);
+        setActiveAccount(false);
+    };
+    const handleCancelledOnClick = () => {
+        setActiveD(false);
+        setActiveP(false);
+        setActivePending(false);
+        setActiveWaiting(false);
+        setActiveInprogress(false);
+        setActiveCompleted(false);
+        setActiveApproved(false);
+        setActiveRevision(false);
+        setActiveRejected(false);
+        setActiveCancelled(!activeCancelled);
+        setActiveProfile(false);
+        setActiveAccount(false);
+    };
+    const handleProfileOnClick = () => {
+        setActiveD(false);
+        setActiveP(false);
+        setActivePending(false);
+        setActiveWaiting(false);
+        setActiveInprogress(false);
+        setActiveCompleted(false);
+        setActiveApproved(false);
+        setActiveRevision(false);
+        setActiveRejected(false);
+        setActiveCancelled(false);
+        setActiveProfile(!activeProfile);
+        setActiveAccount(false);
+    };
+    const handleAccountOnClick = () => {
+        setActiveD(false);
+        setActiveP(false);
+        setActivePending(false);
+        setActiveWaiting(false);
+        setActiveInprogress(false);
+        setActiveCompleted(false);
+        setActiveApproved(false);
+        setActiveRevision(false);
+        setActiveRejected(false);
+        setActiveCancelled(false);
+        setActiveProfile(false);
+        setActiveAccount(!activeAccount);
+    };
     return ( 
         <div className="sidebar" style={{marginTop:"-6px"}}>
         <Card className="order-card1 d-none d-sm-block">
-        <ListGroup>
+        <ListGroup style={{borderBottomRightRadius:"unset"}}>
             <ListGroupItem className="order-brand" style={{backgroundColor:"#fdaa8f", borderTopRightRadius:"unset"}}><h3><Link className="order-color1" to="/order/index"><img src={logo} width="270px" style={{marginTop:"-15px", marginBottom:"-25px"}} alt="logo"/></Link></h3></ListGroupItem>
-            <ListGroupItem style={{backgroundColor:  '#ffffff'}}><FaListUl/>&nbsp;&nbsp;&nbsp;<Link className="order-color1" to="/order/index">Dashboard</Link></ListGroupItem>
-            <ListGroupItem style={{backgroundColor:  '#ffffff'}}><GrAdd/>&nbsp;&nbsp;&nbsp;<Link className="order-color1" to="/order/createorder">Place Order</Link><Tag className="order-badge" color="volcano">12</Tag></ListGroupItem>
-            <ListGroupItem style={{backgroundColor:  '#ffffff'}}><FiEdit/>&nbsp;&nbsp;&nbsp;<Link className="order-color1" to="/order/pending">Pending</Link><Tag className="order-badge" color="volcano">12</Tag></ListGroupItem>
-            <ListGroupItem style={{backgroundColor:  '#ffffff'}}><AiOutlineWallet/>&nbsp;&nbsp;&nbsp;<Link className="order-color1" to="/order/waiting">WaitingTo Be Assigned</Link><Tag className="order-badge" color="volcano">$5.05</Tag></ListGroupItem>
-            <ListGroupItem style={{backgroundColor:  '#ffffff'}}><Spin/>&nbsp;&nbsp;&nbsp;<Link className="order-color1" to="/order/inprogress">In Progress</Link><Tag className="order-badge" color="volcano">$5.05</Tag></ListGroupItem>
-            <ListGroupItem style={{backgroundColor:  '#ffffff'}}><GrCompliance/>&nbsp;&nbsp;&nbsp;<Link className="order-color1" to="/order/completed">Completed</Link></ListGroupItem>
-            <ListGroupItem style={{backgroundColor:  '#ffffff'}}><FaRegCheckCircle/>&nbsp;&nbsp;&nbsp;<Link className="order-color1" to="/order/approved">Approved</Link></ListGroupItem>
-            <ListGroupItem style={{backgroundColor:  '#ffffff'}}><BiRevision/>&nbsp;&nbsp;&nbsp;<Link className="order-color1" to="/order/revision">Revision</Link><Tag className="order-badge" color="volcano">0</Tag></ListGroupItem>
-            <ListGroupItem style={{backgroundColor:  '#ffffff'}}><BiStopCircle/>&nbsp;&nbsp;&nbsp;<Link className="order-color1" to="/order/rejected">Rejected</Link></ListGroupItem>
-            <ListGroupItem style={{backgroundColor:  '#ffffff'}}><GiCancel/>&nbsp;&nbsp;&nbsp;<Link className="order-color1" to="/order/cancelled">Cancelled</Link></ListGroupItem>
-            <ListGroupItem style={{backgroundColor:  '#ffffff'}}><CgProfile/>&nbsp;&nbsp;&nbsp;<Link className="order-color1" to="/order/profile">Profile</Link><Tag className="order-badge" color="volcano">$5.05</Tag></ListGroupItem>
-            <ListGroupItem style={{backgroundColor:  '#ffffff'}}><MdAccountBalance/>&nbsp;&nbsp;&nbsp;<Link className="order-color1" to="/order/account">Account</Link></ListGroupItem>
-            <ListGroupItem style={{backgroundColor:  '#ffffff', cursor:"pointer", borderTop:"solid 1px"}} onClick={background} ><RiMoonClearFill style={{color:"#68C798"}}/>&nbsp;&nbsp;&nbsp;Green Mode{theme === '#eaebef' ? <BsToggleOff className="order-badge" color="#000000" size="35px"/> : <BsToggleOn color="#68C798" className="order-badge" size="35px"/>}</ListGroupItem>
+            <Link className="order-color1" to="/order/index"><ListGroupItem active={activeD} onClick={handleDashboardOnClick} style={{color:"#000000", backgroundColor: backgroundColor, borderTopRightRadius:"unset",borderBottomRightRadius:"unset"}}><FaListUl/>&nbsp;&nbsp;&nbsp;Dashboard</ListGroupItem></Link>
+            <Link className="order-color1" to="/order/createorder"><ListGroupItem active={activeP} onClick={handlePlaceOrderOnClick} style={{color:"#000000", backgroundColor:  '#ffffff', borderTopRightRadius:"unset",borderBottomRightRadius:"unset"}}><GrAdd/>&nbsp;&nbsp;&nbsp;Place Order<Tag className="order-badge" color="volcano">12</Tag></ListGroupItem></Link>
+            <Link className="order-color1" to="/order/pending"><ListGroupItem active={activePending} onClick={handlePendingOnClick} style={{color:"#000000", backgroundColor:  '#ffffff', borderTopRightRadius:"unset",borderBottomRightRadius:"unset"}}><FiEdit/>&nbsp;&nbsp;&nbsp;Pending<Tag className="order-badge" color="volcano">12</Tag></ListGroupItem></Link>
+            <Link className="order-color1" to="/order/waiting"><ListGroupItem active={activeWaiting} onClick={handleWaitingOnClick} style={{color:"#000000", backgroundColor:  '#ffffff', borderTopRightRadius:"unset",borderBottomRightRadius:"unset"}}><AiOutlineWallet/>&nbsp;&nbsp;&nbsp;WaitingTo Be Assigned<Tag className="order-badge" color="volcano">$5.05</Tag></ListGroupItem></Link>
+            <Link className="order-color1" to="/order/inprogress"><ListGroupItem active={activeInprogress} onClick={handleInProgressOnClick} style={{color:"#000000", backgroundColor:  '#ffffff', borderTopRightRadius:"unset",borderBottomRightRadius:"unset"}}><Spin/>&nbsp;&nbsp;&nbsp;In Progress<Tag className="order-badge" color="volcano">$5.05</Tag></ListGroupItem></Link>
+            <Link className="order-color1" to="/order/completed"><ListGroupItem active={activeCompleted} onClick={handleCompletedOnClick} style={{color:"#000000", backgroundColor:  '#ffffff', borderTopRightRadius:"unset",borderBottomRightRadius:"unset"}}><GrCompliance/>&nbsp;&nbsp;&nbsp;Completed</ListGroupItem></Link>
+            <Link className="order-color1" to="/order/approved"><ListGroupItem active={activeApproved} onClick={handleApprovedOnClick} style={{color:"#000000", backgroundColor:  '#ffffff', borderTopRightRadius:"unset",borderBottomRightRadius:"unset"}}><FaRegCheckCircle/>&nbsp;&nbsp;&nbsp;Approved</ListGroupItem></Link>
+            <Link className="order-color1" to="/order/revision"><ListGroupItem active={activeRevision} onClick={handleRevisionOnClick} style={{color:"#000000", backgroundColor:  '#ffffff', borderTopRightRadius:"unset",borderBottomRightRadius:"unset"}}><BiRevision/>&nbsp;&nbsp;&nbsp;Revision<Tag className="order-badge" color="volcano">0</Tag></ListGroupItem></Link>
+            <Link className="order-color1" to="/order/rejected"><ListGroupItem active={activeRejected} onClick={handleRejectedOnClick} style={{color:"#000000", backgroundColor:  '#ffffff', borderTopRightRadius:"unset",borderBottomRightRadius:"unset"}}><BiStopCircle/>&nbsp;&nbsp;&nbsp;Rejected</ListGroupItem></Link>
+            <Link className="order-color1" to="/order/cancelled"><ListGroupItem active={activeCancelled} onClick={handleCancelledOnClick} style={{color:"#000000", backgroundColor:  '#ffffff', borderTopRightRadius:"unset",borderBottomRightRadius:"unset"}}><GiCancel/>&nbsp;&nbsp;&nbsp;Cancelled</ListGroupItem></Link>
+            <Link className="order-color1" to="/order/profile"><ListGroupItem active={activeProfile} onClick={handleProfileOnClick} style={{color:"#000000", backgroundColor:  '#ffffff', borderTopRightRadius:"unset",borderBottomRightRadius:"unset"}}><CgProfile/>&nbsp;&nbsp;&nbsp;Profile<Tag className="order-badge" color="volcano">$5.05</Tag></ListGroupItem></Link>
+            <Link className="order-color1" to="/order/account"><ListGroupItem active={activeAccount} onClick={handleAccountOnClick} style={{color:"#000000", backgroundColor:  '#ffffff', borderTopRightRadius:"unset",borderBottomRightRadius:"unset"}}><MdAccountBalance/>&nbsp;&nbsp;&nbsp;Account</ListGroupItem></Link>
+            <ListGroupItem style={{borderBottomRightRadius:"unset", backgroundColor:  '#ffffff', cursor:"pointer", borderTop:"solid 1px"}} onClick={background} ><RiMoonClearFill style={{color:"#68C798"}}/>&nbsp;&nbsp;&nbsp;Green Mode{theme === '#eaebef' ? <BsToggleOff className="order-badge" color="#000000" size="35px"/> : <BsToggleOn color="#68C798" className="order-badge" size="35px"/>}</ListGroupItem>
         </ListGroup>
         </Card>
         </div>

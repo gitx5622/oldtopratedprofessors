@@ -101,7 +101,7 @@ const Carousel = () => {
                                     <p className="bottom-card">100% SATISFACTION GUARANTEED</p>
                                 </center>
                                 <Row>
-                                    <Col sm={6}><a href="/register"><Button theme="success">Sign Up</Button></a></Col>
+                                    <Col sm={6}><a href="/order/index"><Button theme="success">Dashboard</Button></a></Col>
                                     <Col sm={6}><a href="/order/createorder"><Button theme="success">Order
                                         Now</Button></a></Col>
                                 </Row>
