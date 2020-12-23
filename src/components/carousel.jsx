@@ -102,7 +102,7 @@ const Carousel = () => {
                                 </center>
                                 <Row>
                                     <Col sm={6}><a href="/register"><Button theme="success">Sign Up</Button></a></Col>
-                                    <Col sm={6}><a href="/order/index"><Button theme="success">Order
+                                    <Col sm={6}><a href="/order/createorder"><Button theme="success">Order
                                         Now</Button></a></Col>
                                 </Row>
                             </CardBody>

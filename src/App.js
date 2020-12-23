@@ -32,7 +32,7 @@ import Account from './order/common/account';
 import Promocodes from './order/common/promocodes';
 import Notifications from './order/notifications';
 import OrderDetails from './order/orderDetails';
-// import PrivateRoute from './components/privateRoute';
+import PrivateRoute from './components/privateRoute';
 import OrderNav from './order/common/orderNav';
 
 const getStorageTheme = () => {
@@ -75,8 +75,8 @@ const App = () =>  {
             </Col>
             <Col sm={9}><OrderNav/>
             <div className="pt-3 pb-20" style={{zIndex:1, marginTop:"40px"}}>
-            <Route path="/order/index" component={AllOrders}/>
-            <Route path="/order/createorder" component={CreateOrder}/>
+            <PrivateRoute path="/order/index" component={AllOrders}/>
+            <PrivateRoute path="/order/createorder" component={CreateOrder}/>
             <Route path="/order/uploadfiles" component={UploadFiles}/>
             <Route path="/order/completed" component={Completed}/>
             <Route path="/order/approved" component={Approved}/>
