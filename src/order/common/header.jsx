@@ -4,6 +4,7 @@ import profile from '../../assets/profile.png';
 import { useSelector, useDispatch } from 'react-redux';
 import { SignOut } from '../../store/auth/actions/authActions';
 import { Link } from 'react-router-dom';
+
 /* eslint-disable jsx-a11y/anchor-is-valid */
 const Header = () => {
     const currentState = useSelector((state) => state);
@@ -20,7 +21,7 @@ const Header = () => {
     };
     return ( 
         <div>
-            <Col sm={1}></Col>
+            <Col sm={1}/>
             <Col sm ={5}>
                 <ul className="order-links">
                     <li>

@@ -34,34 +34,10 @@ const AllOrders = () => {
             <Col>
             <h3>&nbsp;&nbsp;&nbsp;All Orders</h3>
             </Col>
-        </Row><br/>
+        </Row>
         <Nav tabs>
             <NavItem>
                 <NavLink className="order-color " href="/order/index" active>All orders</NavLink>
-            </NavItem>
-            <NavItem>
-                <NavLink className="order-color" href="/order/pending">Pending</NavLink>
-            </NavItem>
-            <NavItem>
-                <NavLink className="order-color" href="/order/waiting">Waiting assign</NavLink>
-            </NavItem>
-            <NavItem>
-                <NavLink className="order-color" href="/order/inprogress">In Progress</NavLink>
-            </NavItem>
-            <NavItem>
-                <NavLink className="order-color" href="/order/completed">Completed</NavLink>
-            </NavItem>
-            <NavItem>
-                <NavLink className="order-color" href="/order/approved">Approved</NavLink>
-            </NavItem>
-            <NavItem>
-                <NavLink className="order-color" href="/order/revision">Revision</NavLink>
-            </NavItem>
-            <NavItem>
-                <NavLink className="order-color" href="/order/rejected">Rejected</NavLink>
-            </NavItem>
-            <NavItem>
-                <NavLink className="order-color" href="/order/cancelled">Cancelled</NavLink>
             </NavItem>
         </Nav><br/>
     <Card>
@@ -70,7 +46,7 @@ const AllOrders = () => {
             <h3>Contemporary Issues in Marketing</h3>
             <ul className="order-links">
                 <li><img src={usFlag} width="30px" alt="usFlag"/> English</li>
-                <li><Button className="placeorder-btn" theme="success" size="sm">Completed</Button></li>
+                <li><Button style={{color:"#000000", borderRadius: "20px", backgroundColor:" #beefd7"}} theme="success" size="sm">Completed</Button></li>
                 <li>Nov 6, 2020</li>
                 <li>5 days Remaining</li>
             </ul>

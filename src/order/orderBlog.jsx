@@ -13,6 +13,6 @@ const OrderBlog = () => {
             </Row>
         </div>
      );
-}
+};
  
 export default OrderBlog;
