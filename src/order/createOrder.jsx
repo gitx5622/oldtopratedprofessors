@@ -17,28 +17,7 @@ import {orderService} from "../store/service/actions/serviceActions";
 import {orderLanguage} from "../store/language/actions/languageActions";
 import {orderPages} from "../store/pages/actions/pageActions";
 
-// const initialState = {
-//     page: 1,
-//     per: 275
-// };
-// const reducer = (state, action) => {
-//     switch (action.type) {
-//         case 'INCREMENT':
-//             return {
-//                 ...state,
-//                 page: state.page + 1,
-//                 per: state.per + 275
-//             };
-//         case 'DECREMENT':
-//             return {
-//                 ...state,
-//                 page: state.page - 1,
-//                 per: state.per - 275
-//             };
-//         default:
-//             return state;
-//     }
-// };
+
 const CreateOrder = () => {
     const [selected, setSelected] = React.useState("");
     const [myservice, setmyservice] = React.useState(8);
@@ -47,8 +26,6 @@ const CreateOrder = () => {
     const [mypages, setmypages] = React.useState(1);
     const [mylevel, setmylevel] = React.useState(1);
     console.log(selected);
-
-    // const [ count, execute] = useReducer(reducer, initialState);
 
     const levelSelector = useSelector(state => state.Level.level);
     const pageSelector = useSelector(state => state.Page.page);
@@ -117,13 +94,6 @@ const CreateOrder = () => {
         setSelected(itemSelected);
         setmylevel(itemSelected.factor);
     };
-    // if (count.page < 1){
-    //     return initialState;
-    // }
-    // if (count.per < 275) {
-    //     return initialState
-    // }
-    console.log(pageSelector);
     return ( 
         <div className="createorder">
             <Row style={{paddingTop:"30px", marginLeft:"-36px"}}>
@@ -229,14 +199,6 @@ const CreateOrder = () => {
                                         )})}
                                     </select>
                                 </div>
-                                {/*<div className="form-group">*/}
-                                {/*    <center>*/}
-                                {/*        <label><strong>Pages&nbsp;&nbsp;({count.page}{count.page === 1 ? " page" : " pages"})</strong></label><br/>*/}
-                                {/*        <Button theme="secondary" disabled={count.page === 1} onClick={() => execute({type: 'DECREMENT'})} className="placeorder-btn" size="sm"><AiOutlineMinus/></Button>*/}
-                                {/*        &nbsp;&nbsp;{count.per} Words&nbsp;&nbsp;*/}
-                                {/*        <Button theme="secondary" disabled={count.page === 100 } onClick={() => execute({type: 'INCREMENT'})} className="placeorder-btn" size="sm"><GrAdd/></Button>*/}
-                                {/*    </center>*/}
-                                {/*</div>*/}
                                 <div className="form-group">
                                     <label><strong>Topic</strong></label>
                                     <input type="text" className="form-control" style={{width:"478px"}}/>

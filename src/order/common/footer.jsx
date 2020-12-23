@@ -6,7 +6,7 @@ import mcard from '../../assets/mcard.png';
 
 const OrderFooter = () => {
     return ( 
-       <div className="order-footer">
+       <div className="order-footer fixed-bottom">
            <div className="container">
                <div className="row">
                     <div className="col-sm-6">
@@ -28,6 +28,6 @@ const OrderFooter = () => {
            </div>
        </div>
      );
-}
+};
  
 export default OrderFooter;

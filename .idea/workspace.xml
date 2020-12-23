@@ -4,11 +4,12 @@
     <list default="true" id="b9b8b21f-654d-44d1-a1a5-1425e85c0a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/level/reducers/levelReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/level/reducers/levelReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/pages/reducers/pageReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/pages/reducers/pageReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/service/reducers/serviceReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/service/reducers/serviceReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/type/reducers/typeReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/type/reducers/typeReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/urgency/reducers/urgencyReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/urgency/reducers/urgencyReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/reviews.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/reviews.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/order/common/naV.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/common/naV.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/order/createOrder.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/createOrder.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/order/sideBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/sideBar.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +32,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../movies-app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../e-shop_front" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -70,6 +71,7 @@
       <workItem from="1608614982047" duration="5396000" />
       <workItem from="1608623505687" duration="13649000" />
       <workItem from="1608639222460" duration="42434000" />
+      <workItem from="1608741207702" duration="4128000" />
     </task>
     <servers />
   </component>
@@ -89,13 +91,13 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="427" y="222" width="502" height="276" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1608672265985" />
-    <state x="466" y="121" width="424" height="478" key="FileChooserDialogImpl" timestamp="1608721668252">
+    <state x="466" y="121" width="424" height="478" key="FileChooserDialogImpl" timestamp="1608751255137">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="466" y="121" width="424" height="478" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1608721668252" />
-    <state x="187" y="0" key="SettingsEditor" timestamp="1608273492193">
+    <state x="466" y="121" width="424" height="478" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1608751255137" />
+    <state x="187" y="0" key="SettingsEditor" timestamp="1608741704235">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="187" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1608273492193" />
+    <state x="187" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1608741704235" />
   </component>
 </project>

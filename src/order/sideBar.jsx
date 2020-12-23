@@ -2,9 +2,8 @@ import React from 'react';
 import {
     GrAdd,
     AiOutlineWallet,
-    MdAccountBalance,
     FiEdit,
-    CgProfile,BsToggleOn,BsToggleOff,
+    BsToggleOn,BsToggleOff,
     RiMoonClearFill,
     GiCancel,BiRevision,
     BiStopCircle,
@@ -29,8 +28,6 @@ const SideBar = ({background, theme}) => {
     const [activeRevision, setActiveRevision] = React.useState(false);
     const [activeRejected, setActiveRejected] = React.useState(false);
     const [activeCancelled, setActiveCancelled] = React.useState(false);
-    const [activeProfile, setActiveProfile] = React.useState(false);
-    const [activeAccount, setActiveAccount] = React.useState(false);
     const [backgroundColor, setBackgroundColor] = React.useState("ffffff");
 
     const handleDashboardOnClick = () => {
@@ -44,8 +41,6 @@ const SideBar = ({background, theme}) => {
         setActiveRevision(false);
         setActiveRejected(false);
         setActiveCancelled(false);
-        setActiveProfile(false);
-        setActiveAccount(false);
         setBackgroundColor("#beefd7")
     };
     const handlePlaceOrderOnClick = () => {
@@ -59,8 +54,6 @@ const SideBar = ({background, theme}) => {
         setActiveRevision(false);
         setActiveRejected(false);
         setActiveCancelled(false);
-        setActiveProfile(false);
-        setActiveAccount(false);
     };
     const handlePendingOnClick = () => {
         setActiveD(false);
@@ -73,8 +66,6 @@ const SideBar = ({background, theme}) => {
         setActiveRevision(false);
         setActiveRejected(false);
         setActiveCancelled(false);
-        setActiveProfile(false);
-        setActiveAccount(false);
     };
     const handleWaitingOnClick = () => {
         setActiveD(false);
@@ -87,8 +78,6 @@ const SideBar = ({background, theme}) => {
         setActiveRevision(false);
         setActiveRejected(false);
         setActiveCancelled(false);
-        setActiveProfile(false);
-        setActiveAccount(false);
     };
     const handleInProgressOnClick = () => {
         setActiveD(false);
@@ -101,8 +90,6 @@ const SideBar = ({background, theme}) => {
         setActiveRevision(false);
         setActiveRejected(false);
         setActiveCancelled(false);
-        setActiveProfile(false);
-        setActiveAccount(false);
     };
     const handleCompletedOnClick = () => {
         setActiveD(false);
@@ -115,8 +102,6 @@ const SideBar = ({background, theme}) => {
         setActiveRevision(false);
         setActiveRejected(false);
         setActiveCancelled(false);
-        setActiveProfile(false);
-        setActiveAccount(false);
     };
     const handleApprovedOnClick = () => {
         setActiveD(false);
@@ -129,8 +114,6 @@ const SideBar = ({background, theme}) => {
         setActiveRevision(false);
         setActiveRejected(false);
         setActiveCancelled(false);
-        setActiveProfile(false);
-        setActiveAccount(false);
     };
     const handleRevisionOnClick = () => {
         setActiveD(false);
@@ -143,8 +126,6 @@ const SideBar = ({background, theme}) => {
         setActiveRevision(!activeRevision);
         setActiveRejected(false);
         setActiveCancelled(false);
-        setActiveProfile(false);
-        setActiveAccount(false);
     };
     const handleRejectedOnClick = () => {
         setActiveD(false);
@@ -157,8 +138,6 @@ const SideBar = ({background, theme}) => {
         setActiveRevision(false);
         setActiveRejected(!activeRejected);
         setActiveCancelled(false);
-        setActiveProfile(false);
-        setActiveAccount(false);
     };
     const handleCancelledOnClick = () => {
         setActiveD(false);
@@ -171,36 +150,6 @@ const SideBar = ({background, theme}) => {
         setActiveRevision(false);
         setActiveRejected(false);
         setActiveCancelled(!activeCancelled);
-        setActiveProfile(false);
-        setActiveAccount(false);
-    };
-    const handleProfileOnClick = () => {
-        setActiveD(false);
-        setActiveP(false);
-        setActivePending(false);
-        setActiveWaiting(false);
-        setActiveInprogress(false);
-        setActiveCompleted(false);
-        setActiveApproved(false);
-        setActiveRevision(false);
-        setActiveRejected(false);
-        setActiveCancelled(false);
-        setActiveProfile(!activeProfile);
-        setActiveAccount(false);
-    };
-    const handleAccountOnClick = () => {
-        setActiveD(false);
-        setActiveP(false);
-        setActivePending(false);
-        setActiveWaiting(false);
-        setActiveInprogress(false);
-        setActiveCompleted(false);
-        setActiveApproved(false);
-        setActiveRevision(false);
-        setActiveRejected(false);
-        setActiveCancelled(false);
-        setActiveProfile(false);
-        setActiveAccount(!activeAccount);
     };
     return ( 
         <div className="sidebar" style={{marginTop:"-6px"}}>
@@ -217,8 +166,6 @@ const SideBar = ({background, theme}) => {
             <Link className="order-color1" to="/order/revision"><ListGroupItem active={activeRevision} onClick={handleRevisionOnClick} style={{color:"#000000", backgroundColor:  '#ffffff', borderTopRightRadius:"unset",borderBottomRightRadius:"unset"}}><BiRevision/>&nbsp;&nbsp;&nbsp;Revision<Tag className="order-badge" color="volcano">0</Tag></ListGroupItem></Link>
             <Link className="order-color1" to="/order/rejected"><ListGroupItem active={activeRejected} onClick={handleRejectedOnClick} style={{color:"#000000", backgroundColor:  '#ffffff', borderTopRightRadius:"unset",borderBottomRightRadius:"unset"}}><BiStopCircle/>&nbsp;&nbsp;&nbsp;Rejected</ListGroupItem></Link>
             <Link className="order-color1" to="/order/cancelled"><ListGroupItem active={activeCancelled} onClick={handleCancelledOnClick} style={{color:"#000000", backgroundColor:  '#ffffff', borderTopRightRadius:"unset",borderBottomRightRadius:"unset"}}><GiCancel/>&nbsp;&nbsp;&nbsp;Cancelled</ListGroupItem></Link>
-            <Link className="order-color1" to="/order/profile"><ListGroupItem active={activeProfile} onClick={handleProfileOnClick} style={{color:"#000000", backgroundColor:  '#ffffff', borderTopRightRadius:"unset",borderBottomRightRadius:"unset"}}><CgProfile/>&nbsp;&nbsp;&nbsp;Profile<Tag className="order-badge" color="volcano">$5.05</Tag></ListGroupItem></Link>
-            <Link className="order-color1" to="/order/account"><ListGroupItem active={activeAccount} onClick={handleAccountOnClick} style={{color:"#000000", backgroundColor:  '#ffffff', borderTopRightRadius:"unset",borderBottomRightRadius:"unset"}}><MdAccountBalance/>&nbsp;&nbsp;&nbsp;Account</ListGroupItem></Link>
             <ListGroupItem style={{borderBottomRightRadius:"unset", backgroundColor:  '#ffffff', cursor:"pointer", borderTop:"solid 1px"}} onClick={background} ><RiMoonClearFill style={{color:"#68C798"}}/>&nbsp;&nbsp;&nbsp;Green Mode{theme === '#eaebef' ? <BsToggleOff className="order-badge" color="#000000" size="35px"/> : <BsToggleOn color="#68C798" className="order-badge" size="35px"/>}</ListGroupItem>
         </ListGroup>
         </Card>
