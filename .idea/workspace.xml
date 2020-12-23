@@ -7,10 +7,9 @@
       <change beforePath="$PROJECT_DIR$/src/order/allOrders.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/allOrders.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/order/approved.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/approved.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/order/cancelled.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/cancelled.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/order/common/header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/common/header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/order/completed.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/completed.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/order/inProgress.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/inProgress.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/order/orderBlog.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/orderBlog.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/order/orderDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/orderDetails.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/order/pending.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/pending.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/order/rejected.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/rejected.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/order/revision.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/revision.jsx" afterDir="false" />
@@ -75,7 +74,7 @@
       <workItem from="1608613777367" duration="741000" />
       <workItem from="1608614982047" duration="5396000" />
       <workItem from="1608623505687" duration="13649000" />
-      <workItem from="1608639222460" duration="35633000" />
+      <workItem from="1608639222460" duration="36385000" />
     </task>
     <servers />
   </component>

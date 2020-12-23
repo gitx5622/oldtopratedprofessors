@@ -13,7 +13,7 @@ const Pending = () => {
             </Row>
             <Nav tabs>
             <NavItem>
-                <NavLink className="order-color" href="/order/pending" active>Pending</NavLink>
+                <NavLink className="order-color" href="#" active>Pending</NavLink>
             </NavItem>
         </Nav><br/>
         <TableColumn/>

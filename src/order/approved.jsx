@@ -13,7 +13,7 @@ const Approved = () => {
             </Row>
             <Nav tabs>
             <NavItem>
-                <NavLink className="order-color" href="/order/approved" active>Approved</NavLink>
+                <NavLink className="order-color" href="#" active>Approved</NavLink>
             </NavItem>
         </Nav><br/>
            <TableColumn/>

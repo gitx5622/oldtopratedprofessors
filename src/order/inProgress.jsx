@@ -13,7 +13,7 @@ const InProgress = () => {
             </Row>
             <Nav tabs>
             <NavItem>
-                <NavLink className="order-color" href="/order/inprogress" active>In Progress</NavLink>
+                <NavLink className="order-color" href="#" active>In Progress</NavLink>
             </NavItem>
         </Nav><br/>
         <TableColumn/>

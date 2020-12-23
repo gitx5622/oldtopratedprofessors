@@ -12,7 +12,7 @@ const Completed = () => {
             </Row>
             <Nav tabs>
             <NavItem>
-                <NavLink className="order-color" href="/order/completed" active>Completed</NavLink>
+                <NavLink className="order-color" href="#" active>Completed</NavLink>
             </NavItem>
         </Nav><br/>
         <TableColumn/>

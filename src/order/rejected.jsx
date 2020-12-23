@@ -13,7 +13,7 @@ const Rejected = () => {
             </Row>
             <Nav tabs>
             <NavItem>
-                <NavLink className="order-color" href="/order/rejected" active>Rejected</NavLink>
+                <NavLink className="order-color" href="#" active>Rejected</NavLink>
             </NavItem>
         </Nav><br/>
             <TableColumn/>

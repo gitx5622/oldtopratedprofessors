@@ -12,7 +12,7 @@ const WaitingAssign = () => {
             </Row>
             <Nav tabs>
             <NavItem>
-                <NavLink className="order-color" href="/order/waiting" active>Waiting assign</NavLink>
+                <NavLink className="order-color" href="#" active>Waiting assign</NavLink>
             </NavItem>
         </Nav><br/>
         <TableColumn/>

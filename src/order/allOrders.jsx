@@ -37,7 +37,7 @@ const AllOrders = () => {
         </Row>
         <Nav tabs>
             <NavItem>
-                <NavLink className="order-color " href="/order/index" active>All orders</NavLink>
+                <NavLink className="order-color " href="#" active>All orders</NavLink>
             </NavItem>
         </Nav><br/>
     <Card>

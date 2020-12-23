@@ -4,10 +4,7 @@ import { Row, Col, Button } from 'shards-react';
 const OrderDetails = () => {
     return ( 
         <div>
-            <Row className="row-header" style={{paddingTop:"30px", marginLeft:"-36px"}}>
-            <Col>
-            <h3>&nbsp;&nbsp;&nbsp;Order Details</h3>
-            </Col>
+            <Row className="row-header" style={{paddingTop:"10px", marginLeft:"-36px"}}>
         </Row><br/>
     <Row>
         <Col sm={5}>

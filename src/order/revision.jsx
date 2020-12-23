@@ -12,7 +12,7 @@ const Revision = () => {
             </Row>
             <Nav tabs>
             <NavItem>
-                <NavLink className="order-color" href="/order/revision" active>Revision</NavLink>
+                <NavLink className="order-color" href="#" active>Revision</NavLink>
             </NavItem>
         </Nav><br/>
         <TableColumn/>

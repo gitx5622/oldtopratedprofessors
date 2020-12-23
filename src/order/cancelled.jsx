@@ -12,7 +12,7 @@ const Cancelled = () => {
             </Row>
             <Nav tabs>
             <NavItem>
-                <NavLink className="order-color" href="/order/cancelled" active>Cancelled</NavLink>
+                <NavLink className="order-color" href="#" active>Cancelled</NavLink>
             </NavItem>
         </Nav><br/>
         <TableColumn/>
