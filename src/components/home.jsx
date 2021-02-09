@@ -14,20 +14,20 @@ import Counterlap from './counterlap'
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
-  const [jobs, setJobs] = useState(data)
-  const [value, setValue] = useState(0)
+  const [jobs, setJobs] = useState(data);
+  const [value, setValue] = useState(0);
 
   const fetchJobs = async () => {
     setInterval(()=> {
-      setJobs(jobs)
+      setJobs(jobs);
       setLoading(false);
     }, 500)
-  }
+  };
 
   useEffect(() => {
     fetchJobs();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  }, []);
 
   if (loading) {
     return (
@@ -37,7 +37,7 @@ const Home = () => {
     )
   }
 
-  const { company, dates, duties, title } = jobs[value]
+  const { company, dates, duties, title } = jobs[value];
     return ( 
     <div>
       <NavBar/>
@@ -52,6 +52,6 @@ const Home = () => {
       <Footer/>
     </div>
      );
-}
+};
  
 export default Home;

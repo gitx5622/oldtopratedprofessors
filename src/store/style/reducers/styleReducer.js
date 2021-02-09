@@ -14,7 +14,7 @@ const styleReducer = (state = initState, action) => {
         case STYLE_SUCCESS:
             return {
                 ...state,
-                style: action.payload,
+                style: [{ name: "Select Style (e.g MLA)" }, ...action.payload],
                 isLoading: false,
                 styleError: null
 

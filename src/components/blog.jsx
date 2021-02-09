@@ -13,7 +13,7 @@ const Blog = () => {
                 <div className="col-md-8 col-xs-12">
                 <center>
                     <h3>Blog</h3>
-                    <div className="underline"></div>
+                    <div className="underline"/>
                 </center>
                 <ul className="list-unstyled">
                 <li className="media mediabody1">

@@ -14,7 +14,7 @@ const spacingReducer = (state = initState, action) => {
         case SPACING_SUCCESS:
             return {
                 ...state,
-                spacing: action.payload,
+                spacing: [{ name: "Select Spacing (e.g Singe-spaced)" }, ...action.payload],
                 isLoading: false,
                 spacingError: null
 

@@ -5,8 +5,8 @@ import mcafee from '../../assets/mcafee.png';
 import mcard from '../../assets/mcard.png';
 
 const OrderFooter = () => {
-    return ( 
-       <div className="order-footer fixed-bottom">
+    return (
+       <div className="order-footer">
            <div className="container">
                <div className="row">
                     <div className="col-sm-6">

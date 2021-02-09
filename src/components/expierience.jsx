@@ -8,7 +8,7 @@ const Expierence = ({company, dates, duties, title, setValue, jobs, value}) => {
         <section className='section'>
       <div className='title'>
         <center><h2>Academic Paper Writing Service</h2></center>
-        <div className='underline'></div>
+        <div className='underline'/>
       </div>
       <div className='jobs-center'>
         {/* btn container */}

@@ -107,7 +107,7 @@ const App = () =>  {
             </div>
             </Col>
           </Row>
-         </div> 
+         </div><br/><br/><br/>
          <OrderFooter/> 
          </div> 
         </Route>

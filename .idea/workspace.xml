@@ -3,8 +3,27 @@
   <component name="ChangeListManager">
     <list default="true" id="b9b8b21f-654d-44d1-a1a5-1425e85c0a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/blog.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blog.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/contact.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/counterlap.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/counterlap.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/expierience.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/expierience.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/order/allOrders.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/allOrders.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/order/common/footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/common/footer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/order/createOrder.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/createOrder.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/language/reducers/languageReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/language/reducers/languageReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/order/actionTypes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/order/actionTypes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/order/actions/orderActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/order/actions/orderActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/sources/reducers/sourceReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/sources/reducers/sourceReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/spacing/reducers/spacingReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/spacing/reducers/spacingReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/style/reducers/styleReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/style/reducers/styleReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/subject/reducers/subjectReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/subject/reducers/subjectReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +35,12 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1li1CAzGfqLr3OE35eDaAc4aAIv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -67,6 +92,12 @@
       <workItem from="1608623505687" duration="13649000" />
       <workItem from="1608639222460" duration="42434000" />
       <workItem from="1608741207702" duration="5725000" />
+      <workItem from="1609576248769" duration="1396000" />
+      <workItem from="1612452248234" duration="24617000" />
+      <workItem from="1612674090359" duration="8107000" />
+      <workItem from="1612810113594" duration="11140000" />
+      <workItem from="1612822218005" duration="2829000" />
+      <workItem from="1612854539783" duration="7789000" />
     </task>
     <servers />
   </component>
@@ -74,10 +105,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="278" y="24" width="800" height="671" key="#ESLint" timestamp="1608066359947">
+    <state x="278" y="24" width="800" height="671" key="#ESLint" timestamp="1612452309855">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="278" y="24" width="800" height="671" key="#ESLint/0.0.1366.728@0.0.1366.728" timestamp="1608066359947" />
+    <state x="278" y="24" width="800" height="671" key="#ESLint/0.0.1366.728@0.0.1366.728" timestamp="1612452309855" />
     <state x="141" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608552322127">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -94,5 +125,17 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="187" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1608741704235" />
+    <state width="498" height="445" key="SwitcherDM" timestamp="1612552763257">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="498" height="445" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1612552763257" />
+    <state x="0" y="0" width="791" height="728" key="find.popup" timestamp="1612585853433">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="0" y="0" width="791" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1612585853433" />
+    <state x="347" y="160" key="run.anything.popup" timestamp="1612814894615">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="347" y="160" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1612814894615" />
   </component>
 </project>

@@ -14,7 +14,7 @@ const subjectReducer = (state = initState, action) => {
         case SUBJECT_SUCCESS:
             return {
                 ...state,
-                subject: action.payload,
+                subject: [{ name: "Select Subject (e.g Art)" }, ...action.payload],
                 isLoading: false,
                 subjectError: null
 

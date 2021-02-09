@@ -14,7 +14,7 @@ const sourceReducer = (state = initState, action) => {
         case SOURCE_SUCCESS:
             return {
                 ...state,
-                sources: action.payload,
+                sources: [{ name: "Select Sources (e.g 5 Sources)" }, ...action.payload],
                 isLoading: false,
                 sourceError: null
 

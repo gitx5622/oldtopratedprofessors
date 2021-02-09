@@ -15,7 +15,7 @@ const languageReducer = (state = initState, action) => {
         case LANGUAGE_SUCCESS:
             return {
                 ...state,
-                language: action.payload,
+                language: [{ name: "Select Language (e.g English - US)" }, ...action.payload],
                 isLoading: false,
                 languageError: null
 
