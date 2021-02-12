@@ -103,7 +103,7 @@ const App = () =>  {
             <Route path="/order/account" component={Account}/>
             <Route path="/order/promocodes" component={Promocodes}/>
             <Route path="/order/notifications" component={Notifications}/>
-            <Route path="/order/orderdetails" component={OrderDetails}/>
+            <Route path="/order/orderdetails/:id" component={OrderDetails}/>
             </div>
             </Col>
           </Row>

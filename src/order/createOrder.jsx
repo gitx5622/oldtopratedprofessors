@@ -217,19 +217,19 @@ const CreateOrder = () => {
     return ( 
         <div className="createorder">
             <Row style={{paddingTop:"13px", marginLeft:"-36px"}}>
-            <Col sm={4}>
-            <h5>&nbsp;&nbsp;&nbsp;Create Order</h5>
+            <Col sm={6}>
             </Col>
-            <Col sm={3}><h5>Price: $ {(myservice * mytype * myurgency * mypages * mylevel *myspacing).toFixed(2)}</h5></Col>
-            <Col sm={5}>
-                <div className="form-group">
-                    <div className="input-group">
-                        <input name="promocode" type="text" className="form-control" placeholder="Enter promocode to get discount!"/>
-                        <div className="input-group-append">
-                            <Button theme="secondary" className="promocode-btn">Apply Code</Button>
-                        </div>
-                    </div>
-                </div>
+            <Col sm={3}><h5>&nbsp;&nbsp;&nbsp;Create Order</h5></Col>
+            <Col sm={3}>
+                <h5>Price: $ {(myservice * mytype * myurgency * mypages * mylevel *myspacing).toFixed(2)}</h5>
+                {/*<div className="form-group">*/}
+                {/*    <div className="input-group">*/}
+                {/*        <input name="promocode" type="text" className="form-control" placeholder="Enter promocode to get discount!"/>*/}
+                {/*        <div className="input-group-append">*/}
+                {/*            <Button theme="secondary" className="promocode-btn">Apply Code</Button>*/}
+                {/*        </div>*/}
+                {/*    </div>*/}
+                {/*</div>*/}
             </Col>
             </Row>
             <Row style={{marginTop:"-23px"}}>

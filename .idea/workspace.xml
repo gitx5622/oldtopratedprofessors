@@ -3,27 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="b9b8b21f-654d-44d1-a1a5-1425e85c0a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/blog.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blog.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/contact.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/counterlap.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/counterlap.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/expierience.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/expierience.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/order/allOrders.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/allOrders.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/order/common/footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/common/footer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/order/createOrder.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/createOrder.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/language/reducers/languageReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/language/reducers/languageReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/order/orderDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/orderDetails.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/order/sideBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/sideBar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/order/actionTypes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/order/actionTypes/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/order/actions/orderActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/order/actions/orderActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/sources/reducers/sourceReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/sources/reducers/sourceReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/spacing/reducers/spacingReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/spacing/reducers/spacingReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/style/reducers/styleReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/style/reducers/styleReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/subject/reducers/subjectReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/subject/reducers/subjectReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/order/reducers/orderReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/order/reducers/orderReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +87,10 @@
       <workItem from="1612674090359" duration="8107000" />
       <workItem from="1612810113594" duration="11140000" />
       <workItem from="1612822218005" duration="2829000" />
-      <workItem from="1612854539783" duration="7789000" />
+      <workItem from="1612854539783" duration="10685000" />
+      <workItem from="1612941644825" duration="4663000" />
+      <workItem from="1613028161088" duration="5961000" />
+      <workItem from="1613038428987" duration="19527000" />
     </task>
     <servers />
   </component>
@@ -117,10 +110,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="427" y="222" width="502" height="276" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1608672265985" />
-    <state x="466" y="121" width="424" height="478" key="FileChooserDialogImpl" timestamp="1608751255137">
+    <state x="466" y="121" width="424" height="478" key="FileChooserDialogImpl" timestamp="1612946860819">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="466" y="121" width="424" height="478" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1608751255137" />
+    <state x="466" y="121" width="424" height="478" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1612946860819" />
     <state x="187" y="0" key="SettingsEditor" timestamp="1608741704235">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

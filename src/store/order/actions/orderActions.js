@@ -22,8 +22,16 @@ import {
     ORDER_REVISION_ERROR,
     ORDER_REVISION_SUCCESS,
     ORDER_WAITING_ASSIGN_ERROR,
-    ORDER_WAITING_ASSIGN_SUCCESS, ORDER_GET_SUCCESS, ORDER_GET_ERROR
+    ORDER_WAITING_ASSIGN_SUCCESS,
+    ORDER_GET_SUCCESS,
+    ORDER_GET_ERROR,
+    ORDER_ALL_ORDERS_PAGINATION_SUCCESS,
+    UPDATE_ORDER_SUCCESS,
+    UPDATE_ORDER_ERROR,
+    DELETE_ORDER_SUCCESS,
+    DELETE_ORDER_ERROR
 } from "../actionTypes";
+import {message} from "antd";
 
 
 export const orderCreate = (credentials) => {
@@ -48,12 +56,14 @@ export const allOrders = () => {
         try {
             const res = await axios.get(`${API_ROUTE}/users/${user_id}/orders`,
                 { headers: { 'x-toprated-token': `${localStorage.getItem('token')}` } });
-            dispatch({type: ORDER_ALL_ORDERS_SUCCESS, payload: res.data.orders})
+            dispatch({type: ORDER_ALL_ORDERS_SUCCESS, payload: res.data.orders});
+            dispatch({type: ORDER_ALL_ORDERS_PAGINATION_SUCCESS, payload: res.data.pagination})
         }catch (err) {
             dispatch({type: ORDER_ALL_ORDERS_ERROR, payload: err.response.data.error_message})
         }
     }
 };
+
 
 export const getOrderDetails = (order_id) => {
     return async(dispatch) => {
@@ -64,6 +74,36 @@ export const getOrderDetails = (order_id) => {
             dispatch({type: ORDER_GET_SUCCESS, payload: res.data})
         }catch (err) {
             dispatch({type: ORDER_GET_ERROR, payload: err.response.data.error_message})
+        }
+    }
+};
+
+export const deleteOrder = (id) => {
+    return async (dispatch) => {
+        dispatch({ type: BEFORE_STATE });
+        try {
+            const res = await axios.delete(`${API_ROUTE}/orders/${id}`,
+                { headers: { 'x-toprated-token': `${localStorage.getItem('token')}` } });
+            dispatch({type: DELETE_ORDER_SUCCESS, payload: { deletedID: id, message: res.data.response }});
+            message.success("The order was deleted successfully");
+            history.push('/order/index');
+            window.location.reload();
+        } catch(err) {
+            dispatch({ type: DELETE_ORDER_ERROR, payload: err.response.data.error_message })
+        }
+    }
+};
+
+export const updateOrder = (updateDetails, updateSuccess) => {
+    return async (dispatch) => {
+        dispatch({ type: BEFORE_STATE });
+        try {
+            const res = await axios.put(`${API_ROUTE}/orders/${updateDetails.id}`, updateDetails,
+                { headers: { 'x-toprated-token': `${localStorage.getItem('token')}` } });
+            dispatch({type: UPDATE_ORDER_SUCCESS, payload: res.data});
+            updateSuccess()
+        } catch(err) {
+            dispatch({ type: UPDATE_ORDER_ERROR, payload: err.response.data.error_message })
         }
     }
 };
