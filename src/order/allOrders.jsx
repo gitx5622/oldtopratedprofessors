@@ -47,7 +47,6 @@ const AllOrders = () => {
     // const recentOrderName = orderSlice[0].type.name;
     // const recentOrderDeadline = orderSlice[0].deadline;
 
-
     let orders = orderSelector.map(order => {
         return (
         <tr key={order.id} className="table-light">
@@ -113,7 +112,7 @@ const AllOrders = () => {
          </tr>
      </thead>
      <tbody>
-     {orderSelector.length < 1 ? <center><Empty image={Empty.PRESENTED_IMAGE_SIMPLE} /></center>: orders }
+     {orderSelector.length === 0 ? <center><Empty image={Empty.PRESENTED_IMAGE_SIMPLE} /></center>: orders }
      </tbody>
      </table>
      </div>
