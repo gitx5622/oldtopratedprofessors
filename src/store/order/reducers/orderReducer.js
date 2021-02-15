@@ -45,14 +45,14 @@ const orderReducer = (state = initState, action) => {
         case ORDER_ALL_ORDERS_SUCCESS:
             return {
                 ...state,
-                orders: action.payload,
+                orders: action.payload.orders,
                 orderError: null
 
             };
         case ORDER_ALL_ORDERS_PAGINATION_SUCCESS:
             return {
                 ...state,
-                pagination: action.payload,
+                pagination: action.payload.pagination,
                 orderError: null
 
             };

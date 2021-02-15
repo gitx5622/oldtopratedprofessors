@@ -6,6 +6,7 @@ import {getOrderDetails} from "../store/order/actions/orderActions";
 const OrderDetails = (props) => {
     const orderID = props.match.params.id;
     const order = useSelector(state => state.Order.order);
+    console.log(order)
     const dispatch = useDispatch();
     const getOrder = (id) => dispatch(getOrderDetails(id));
 
@@ -13,6 +14,8 @@ const OrderDetails = (props) => {
         getOrder(orderID);
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
+
+
     return ( 
         <div>
             <Row className="row-header" style={{paddingTop:"10px", marginLeft:"-36px"}}>
@@ -54,41 +57,41 @@ const OrderDetails = (props) => {
         <td><strong>Service</strong></td>
       <td style={{backgroundColor:"white"}}>{order.id}</td>
         <td><strong>Level</strong></td>
-      <td style={{backgroundColor:"white"}}><strong>{order.level['name']}</strong></td>
+      <td style={{backgroundColor:"white"}}><strong>{order.id}</strong></td>
     </tr>
     <tr className="table-bordered">
       <td><strong>Urgency</strong></td>
-      <td style={{backgroundColor:"white"}}>{order.urgency['name']}</td>
+      <td style={{backgroundColor:"white"}}>{order.id}</td>
         <td><strong>Client</strong></td>
-      <td style={{backgroundColor:"white"}}><strong>{order.user['username']}</strong></td>
+      <td style={{backgroundColor:"white"}}><strong>{order.id}</strong></td>
     </tr>
     <tr className="table-bordered">
       <td><strong>Subject</strong></td>
-      <td style={{backgroundColor:"white"}}>{order.subject['name']}</td>
+      <td style={{backgroundColor:"white"}}>{order.id}</td>
         <td><strong>Sources</strong></td>
-      <td style={{backgroundColor:"white"}}><strong>{order.source['name']}</strong></td>
+      <td style={{backgroundColor:"white"}}><strong>{order.id}</strong></td>
     </tr>
     <tr className="table-bordered">
         <td><strong>Phone Number</strong></td>
         <td style={{backgroundColor:"white"}}>{order.phone}</td>
         <td><strong>Spacing</strong></td>
-        <td style={{backgroundColor:"white"}}><strong>{order.spacing['name']}</strong></td>
+        <td style={{backgroundColor:"white"}}><strong>{order.id}</strong></td>
     </tr>
     <tr className="table-bordered">
         <td><strong>Type</strong></td>
-        <td style={{backgroundColor:"white"}}>{order.type['name']}</td>
+        <td style={{backgroundColor:"white"}}>{order.id}</td>
         <td><strong>Style</strong></td>
-        <td style={{backgroundColor:"white"}}><strong>{order.style['name']}</strong></td>
+        <td style={{backgroundColor:"white"}}><strong>{order.id}</strong></td>
     </tr>
     <tr className="table-bordered">
         <td><strong>Pages</strong></td>
-        <td style={{backgroundColor:"white"}}>{order.page['name']}</td>
+        <td style={{backgroundColor:"white"}}>{order.id}</td>
         <td><strong>Deadline</strong></td>
         <td style={{backgroundColor:"white"}}><strong>{order.deadline}</strong></td>
     </tr>
     <tr className="table-bordered">
         <td><strong>Language</strong></td>
-        <td style={{backgroundColor:"white"}}>{order.language['name']}</td>
+        <td style={{backgroundColor:"white"}}>{order.id}</td>
         <td><strong>Instructions</strong></td>
         <td style={{backgroundColor:"white"}}><strong>{order.instructions}</strong></td>
     </tr>

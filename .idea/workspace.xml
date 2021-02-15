@@ -4,16 +4,8 @@
     <list default="true" id="b9b8b21f-654d-44d1-a1a5-1425e85c0a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/order/allOrders.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/allOrders.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/order/createOrder.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/createOrder.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/order/orderDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/orderDetails.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/order/sideBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/sideBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/order/actionTypes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/order/actionTypes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/order/actions/orderActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/order/actions/orderActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/order/reducers/orderReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/order/reducers/orderReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +82,7 @@
       <workItem from="1612854539783" duration="10685000" />
       <workItem from="1612941644825" duration="4663000" />
       <workItem from="1613028161088" duration="5961000" />
-      <workItem from="1613038428987" duration="19527000" />
+      <workItem from="1613038428987" duration="22528000" />
     </task>
     <servers />
   </component>

@@ -368,7 +368,10 @@ const CreateOrder = () => {
                                 </div>
                             </Col>
                         </Row>
-                        <Button type="submit" size="md" className="placeorder-btn order-color" outline theme="info">Create Order</Button>
+                        <Button type="submit" size="md" disabled={
+                            order.phone === '' ||
+                            order.topic === ''
+                        } className="placeorder-btn order-color" theme="info">Create Order</Button>
                     </form>
                 </div>
                 <div className="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">

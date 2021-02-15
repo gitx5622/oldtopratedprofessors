@@ -25,7 +25,6 @@ import {
     ORDER_WAITING_ASSIGN_SUCCESS,
     ORDER_GET_SUCCESS,
     ORDER_GET_ERROR,
-    ORDER_ALL_ORDERS_PAGINATION_SUCCESS,
     UPDATE_ORDER_SUCCESS,
     UPDATE_ORDER_ERROR,
     DELETE_ORDER_SUCCESS,
@@ -56,8 +55,7 @@ export const allOrders = () => {
         try {
             const res = await axios.get(`${API_ROUTE}/users/${user_id}/orders`,
                 { headers: { 'x-toprated-token': `${localStorage.getItem('token')}` } });
-            dispatch({type: ORDER_ALL_ORDERS_SUCCESS, payload: res.data.orders});
-            dispatch({type: ORDER_ALL_ORDERS_PAGINATION_SUCCESS, payload: res.data.pagination})
+            dispatch({type: ORDER_ALL_ORDERS_SUCCESS, payload: res.data});
         }catch (err) {
             dispatch({type: ORDER_ALL_ORDERS_ERROR, payload: err.response.data.error_message})
         }
