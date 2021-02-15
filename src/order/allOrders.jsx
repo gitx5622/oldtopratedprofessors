@@ -4,7 +4,7 @@ import {allOrders, deleteOrder} from '../store/order/actions/orderActions';
 import { useSelector, useDispatch } from 'react-redux';
 import { GrView, GrUpdate, AiFillDelete } from 'react-icons/all';
 import { Link } from 'react-router-dom';
-import { Empty, Tag, Popover, Modal } from 'antd';
+import { Tag, Popover, Modal } from 'antd';
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 const AllOrders = () => {
@@ -47,7 +47,7 @@ const AllOrders = () => {
     // const recentOrderName = orderSlice[0].type.name;
     // const recentOrderDeadline = orderSlice[0].deadline;
 
-    let orders = orderSelector.map(order => {
+    const orders = orderSelector.map(order => {
         return (
         <tr key={order.id} className="table-light">
             <td>{order.id}</td>
@@ -78,7 +78,7 @@ const AllOrders = () => {
             </td>
         </tr>
         )
-    });
+    })
     return ( 
         <div>
         <Row className="row-header" style={{paddingTop:"30px", marginLeft:"-36px"}}>
@@ -112,7 +112,7 @@ const AllOrders = () => {
          </tr>
      </thead>
      <tbody>
-     {orderSelector.length === 0 ? <center><Empty image={Empty.PRESENTED_IMAGE_SIMPLE} /></center>: orders }
+      {orders}
      </tbody>
      </table>
      </div>

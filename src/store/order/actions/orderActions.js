@@ -57,7 +57,7 @@ export const allOrders = () => {
                 { headers: { 'x-toprated-token': `${localStorage.getItem('token')}` } });
             dispatch({type: ORDER_ALL_ORDERS_SUCCESS, payload: res.data});
         }catch (err) {
-            dispatch({type: ORDER_ALL_ORDERS_ERROR, payload: err.response.data.error_message})
+            dispatch({type: ORDER_ALL_ORDERS_ERROR, payload: err.response ? err.response.data.error_message : ""})
         }
     }
 };
