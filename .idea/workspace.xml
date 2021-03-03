@@ -4,11 +4,7 @@
     <list default="true" id="b9b8b21f-654d-44d1-a1a5-1425e85c0a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/carousel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/carousel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/order/allOrders.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/allOrders.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/order/sideBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/sideBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/auth/reducers/authReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/auth/reducers/authReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/authorization.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/authorization.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +87,7 @@
       <workItem from="1613978821921" duration="45000" />
       <workItem from="1614255265380" duration="2909000" />
       <workItem from="1614403636987" duration="199000" />
-      <workItem from="1614766255184" duration="3540000" />
+      <workItem from="1614766255184" duration="7472000" />
     </task>
     <servers />
   </component>
