@@ -10,11 +10,11 @@ import {orderService} from "../store/service/actions/serviceActions";
 import {orderPages} from "../store/pages/actions/pageActions";
 
 const Carousel = () => {
-    const levelSelector = useSelector(state => state.Level.level);
-    const pageSelector = useSelector(state => state.Page.page);
-    const serviceSelector = useSelector(state => state.Service.service);
-    const typeSelector = useSelector(state => state.Type.type);
-    const urgencySelector = useSelector(state => state.Urgency.urgency);
+    const levelSelector = useSelector(state => state.Level.level) || [];
+    const pageSelector = useSelector(state => state.Page.page) || [];
+    const serviceSelector = useSelector(state => state.Service.service) || [];
+    const typeSelector = useSelector(state => state.Type.type) || [];
+    const urgencySelector = useSelector(state => state.Urgency.urgency) || [];
 
     const dispatch = useDispatch();
 

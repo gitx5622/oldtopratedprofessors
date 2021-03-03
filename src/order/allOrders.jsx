@@ -9,7 +9,7 @@ import { Tag, Popover, Modal } from 'antd';
 /* eslint-disable jsx-a11y/anchor-is-valid */
 const AllOrders = () => {
     const [isModalVisible, setIsModalVisible] = useState(false);
-    const orderSelector = useSelector(state => state.Order.orders);
+    const orderSelector = useSelector(state => state.Order.orders) || [];
     const dispatch = useDispatch();
 
     const getAllOrders = () => dispatch(allOrders());
@@ -78,7 +78,7 @@ const AllOrders = () => {
             </td>
         </tr>
         )
-    })
+    });
     return ( 
         <div>
         <Row className="row-header" style={{paddingTop:"30px", marginLeft:"-36px"}}>

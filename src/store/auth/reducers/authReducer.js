@@ -11,7 +11,7 @@ export const initState = {
     isUpdatingUser: false,
     authError: null,
     authSuccess: null
-}
+};
 
 
 const authReducer = (state = initState, action) => {
@@ -23,13 +23,13 @@ const authReducer = (state = initState, action) => {
                 ...state,
                 authError: null,
                 isLoading: true,
-            }
+            };
         case BEFORE_USER_STATE:
             return {
                 ...state,
                 userError: null,
                 isUpdatingUser: true,
-            }
+            };
         case SIGNUP_SUCCESS:
             return {
                 ...state,
@@ -37,7 +37,7 @@ const authReducer = (state = initState, action) => {
                 signupError: null,
                 loginError: null
 
-            }
+            };
         case SIGNUP_ERROR:
             return {
                 ...state,
@@ -45,7 +45,7 @@ const authReducer = (state = initState, action) => {
                 signupError: action.payload,
                 loginError: null
 
-            }
+            };
         case LOGIN_SUCCESS:
             return {
                 ...state,
@@ -55,7 +55,7 @@ const authReducer = (state = initState, action) => {
                 loginError: null,
                 signupError: null,
 
-            }
+            };
         case LOGIN_ERROR:
             return {
                 ...state,
@@ -63,7 +63,7 @@ const authReducer = (state = initState, action) => {
                 loginError: action.payload,
                 signupError: null,
 
-            }
+            };
         case LOGOUT_SUCCESS:
             return {
                 ...state,
@@ -73,7 +73,7 @@ const authReducer = (state = initState, action) => {
                 isLoading: false,
                 signupError: null,
                 loginError: null,
-            }
+            };
         case UPDATE_USER_SUCCESS:
             return {
                 ...state,
@@ -81,13 +81,13 @@ const authReducer = (state = initState, action) => {
                 currentUser: action.payload,
                 userError: null,
                 authSuccessUser: "Details Updated"
-            }
+            };
         case UPDATE_USER_ERROR:
             return {
                 ...state,
                 isUpdatingUser: false,
                 userError: action.payload
-            }
+            };
         case DELETE_USER_SUCCESS:
             return {
                 ...state,
@@ -95,16 +95,16 @@ const authReducer = (state = initState, action) => {
                 currentUser: {},
                 isLoading: false,
                 authSuccessUser: "User Deleted"
-            }
+            };
         case DELETE_USER_ERROR:
             return {
                 ...state,
                 isLoading: false,
                 userError: action.payload
-            }
+            };
         default:
             return state;
     }
-}
+};
 
 export default authReducer

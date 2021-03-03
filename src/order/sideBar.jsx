@@ -15,7 +15,6 @@ import { Card,ListGroup, ListGroupItem } from 'shards-react';
 import { Tag, Spin } from 'antd';
 import logo from "../assets/logo.png";
 import { Link } from 'react-router-dom';
-import {useSelector} from "react-redux";
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 const SideBar = ({background, theme}) => {
@@ -153,14 +152,14 @@ const SideBar = ({background, theme}) => {
         setActiveCancelled(!activeCancelled);
     };
 
-    const orderTotal = useSelector(state => state.Order.orders.length);
+    // const orderTotal = useSelector(state => state.Order.orders.length);
 
     return ( 
         <div className="sidebar" style={{marginTop:"-6px"}}>
         <Card className="order-card1 d-none d-sm-block">
         <ListGroup style={{borderBottomRightRadius:"unset"}}>
             <ListGroupItem className="order-brand" style={{backgroundColor:"#fdaa8f", borderTopRightRadius:"unset"}}><h3><Link className="order-color1" to="/order/index"><img src={logo} width="270px" style={{marginTop:"-15px", marginBottom:"-25px"}} alt="logo"/></Link></h3></ListGroupItem>
-            <Link className="order-color1" to="/order/index"><ListGroupItem active={activeD} onClick={handleDashboardOnClick} style={{color:"#000000", backgroundColor: backgroundColor, borderTopRightRadius:"unset",borderBottomRightRadius:"unset"}}><FaListUl/>&nbsp;&nbsp;&nbsp;Dashboard<Tag className="order-badge" color="volcano">{orderTotal === 0 ? null : orderTotal}</Tag></ListGroupItem></Link>
+            <Link className="order-color1" to="/order/index"><ListGroupItem active={activeD} onClick={handleDashboardOnClick} style={{color:"#000000", backgroundColor: backgroundColor, borderTopRightRadius:"unset",borderBottomRightRadius:"unset"}}><FaListUl/>&nbsp;&nbsp;&nbsp;Dashboard<Tag className="order-badge" color="volcano">0</Tag></ListGroupItem></Link>
             <Link className="order-color1" to="/order/createorder"><ListGroupItem active={activeP} onClick={handlePlaceOrderOnClick} style={{color:"#000000", backgroundColor:  '#ffffff', borderTopRightRadius:"unset",borderBottomRightRadius:"unset"}}><GrAdd/>&nbsp;&nbsp;&nbsp;Place Order</ListGroupItem></Link>
             <Link className="order-color1" to="/order/pending"><ListGroupItem active={activePending} onClick={handlePendingOnClick} style={{color:"#000000", backgroundColor:  '#ffffff', borderTopRightRadius:"unset",borderBottomRightRadius:"unset"}}><FiEdit/>&nbsp;&nbsp;&nbsp;Pending<Tag className="order-badge" color="volcano">12</Tag></ListGroupItem></Link>
             <Link className="order-color1" to="/order/waiting"><ListGroupItem active={activeWaiting} onClick={handleWaitingOnClick} style={{color:"#000000", backgroundColor:  '#ffffff', borderTopRightRadius:"unset",borderBottomRightRadius:"unset"}}><AiOutlineWallet/>&nbsp;&nbsp;&nbsp;WaitingTo Be Assigned<Tag className="order-badge" color="volcano">5</Tag></ListGroupItem></Link>

@@ -4,8 +4,11 @@
     <list default="true" id="b9b8b21f-654d-44d1-a1a5-1425e85c0a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/order/createOrder.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/createOrder.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/order/orderDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/orderDetails.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/carousel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/carousel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/order/allOrders.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/allOrders.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/order/sideBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/sideBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/auth/reducers/authReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/auth/reducers/authReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/authorization.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/authorization.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +37,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../e-shop_front" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -83,6 +86,12 @@
       <workItem from="1612941644825" duration="4663000" />
       <workItem from="1613028161088" duration="5961000" />
       <workItem from="1613038428987" duration="22528000" />
+      <workItem from="1613654925463" duration="1045000" />
+      <workItem from="1613832137407" duration="792000" />
+      <workItem from="1613978821921" duration="45000" />
+      <workItem from="1614255265380" duration="2909000" />
+      <workItem from="1614403636987" duration="199000" />
+      <workItem from="1614766255184" duration="3540000" />
     </task>
     <servers />
   </component>
@@ -102,10 +111,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="427" y="222" width="502" height="276" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1608672265985" />
-    <state x="466" y="121" width="424" height="478" key="FileChooserDialogImpl" timestamp="1612946860819">
+    <state x="466" y="121" width="424" height="478" key="FileChooserDialogImpl" timestamp="1614403830843">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="466" y="121" width="424" height="478" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1612946860819" />
+    <state x="466" y="121" width="424" height="478" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1614403830843" />
     <state x="187" y="0" key="SettingsEditor" timestamp="1608741704235">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
