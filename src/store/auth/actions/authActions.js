@@ -84,3 +84,4 @@ export const SignUp = (newUser) => {
         }
     }
 };
+
