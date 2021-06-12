@@ -4,7 +4,7 @@
     <list default="true" id="b9b8b21f-654d-44d1-a1a5-1425e85c0a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/order/sideBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/sideBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +27,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -43,12 +42,14 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/store" />
     </key>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -88,44 +89,23 @@
       <workItem from="1614255265380" duration="2909000" />
       <workItem from="1614403636987" duration="199000" />
       <workItem from="1614766255184" duration="7472000" />
+      <workItem from="1620978920899" duration="3112000" />
+      <workItem from="1623490327684" duration="2581000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="278" y="24" width="800" height="671" key="#ESLint" timestamp="1612452309855">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="278" y="24" width="800" height="671" key="#ESLint/0.0.1366.728@0.0.1366.728" timestamp="1612452309855" />
-    <state x="141" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608552322127">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="141" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1608552322127" />
-    <state x="427" y="222" width="502" height="276" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1608672265985">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="427" y="222" width="502" height="276" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1608672265985" />
-    <state x="466" y="121" width="424" height="478" key="FileChooserDialogImpl" timestamp="1614403830843">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="466" y="121" width="424" height="478" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1614403830843" />
-    <state x="187" y="0" key="SettingsEditor" timestamp="1608741704235">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="187" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1608741704235" />
-    <state width="498" height="445" key="SwitcherDM" timestamp="1612552763257">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="498" height="445" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1612552763257" />
-    <state x="0" y="0" width="791" height="728" key="find.popup" timestamp="1612585853433">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="0" y="0" width="791" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1612585853433" />
-    <state x="347" y="160" key="run.anything.popup" timestamp="1612814894615">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="347" y="160" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1612814894615" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/navbar.jsx</url>
+          <line>66</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
